@@ -1,0 +1,16 @@
+com\mobile\framework\pages\SignupPage.class
+com\mobile\framework\utilities\RetryAnalyzer.class
+com\mobile\framework\utilities\AnnotationTransformer.class
+com\mobile\framework\utilities\LoggerUtility.class
+com\mobile\framework\config\ConfigManager.class
+com\mobile\framework\pages\LoginPage.class
+com\mobile\framework\drivers\DriverFactory.class
+com\mobile\framework\Main.class
+com\mobile\framework\utilities\EmulatorManager.class
+com\mobile\framework\utilities\CommonActionsUtility.class
+com\mobile\framework\reports\ExtentReportManager.class
+com\mobile\framework\utilities\ScreenshotUtility.class
+com\mobile\framework\pages\BasePage.class
+com\mobile\framework\base\BaseTest.class
+com\mobile\framework\utilities\WaitUtility.class
+com\mobile\framework\drivers\AppiumServerManager.class

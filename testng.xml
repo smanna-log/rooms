@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FlutterMobileAutomationSuite" parallel="false" verbose="2">
+    
+    <!-- Listeners for the test suite -->
+    <listeners>
+        <!-- Retry listener to retry failed tests -->
+        <listener class-name="com.mobile.framework.utilities.RetryAnalyzer" />
+    </listeners>
+    
+    <!-- Test definition for Login functionality -->
+    <test name="LoginTests" enabled="true">
+        <classes>
+            <class name="com.mobile.framework.tests.LoginTest" />
+        </classes>
+    </test>
+    
+    <!-- Test definition for Signup functionality -->
+    <test name="SignupTests" enabled="true">
+        <classes>
+            <class name="com.mobile.framework.tests.SignupTest" />
+        </classes>
+    </test>
+    
+</suite>

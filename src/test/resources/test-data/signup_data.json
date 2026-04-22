@@ -1,0 +1,49 @@
+{
+  "valid": {
+    "fullName": "Test User",
+    "email": "newuser_automation@vdapp.com",
+    "password": "Test@1234",
+    "confirmPassword": "Test@1234",
+    "description": "Valid new user signup data"
+  },
+  "existing_email": {
+    "fullName": "Existing User",
+    "email": "test@vdapp.com",
+    "password": "Test@1234",
+    "confirmPassword": "Test@1234",
+    "expected_error": "Email already registered",
+    "description": "Email already used by another account"
+  },
+  "password_mismatch": {
+    "fullName": "Test User",
+    "email": "mismatch@vdapp.com",
+    "password": "Test@1234",
+    "confirmPassword": "Different@5678",
+    "expected_error": "Passwords do not match",
+    "description": "Confirm password does not match password"
+  },
+  "invalid_email_format": {
+    "fullName": "Test User",
+    "email": "invalidemail",
+    "password": "Test@1234",
+    "confirmPassword": "Test@1234",
+    "expected_error": "Enter a valid email address",
+    "description": "Malformed email address"
+  },
+  "empty_name": {
+    "fullName": "",
+    "email": "test@vdapp.com",
+    "password": "Test@1234",
+    "confirmPassword": "Test@1234",
+    "expected_error": "Full name is required",
+    "description": "Full name left empty"
+  },
+  "empty_all": {
+    "fullName": "",
+    "email": "",
+    "password": "",
+    "confirmPassword": "",
+    "expected_error": "Full name is required",
+    "description": "All fields empty"
+  }
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI Comparison Report — Dashboard Screen | VD App</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    :root {
+      --bg: #0f1117; --surface: #1a1d27; --surface2: #22263a; --border: #2e3250;
+      --accent: #6c63ff; --red: #ef4444; --green: #22c55e; --yellow: #f59e0b;
+      --blue: #3b82f6; --text: #e4e6f1; --text-muted: #8b90a8; --radius: 14px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); }
+
+    /* Header */
+    .header { background: linear-gradient(135deg, #1a0a2e 0%, #0f1117 60%); border-bottom: 1px solid var(--border); padding: 36px 48px 28px; }
+    .header-top { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+    .badge { background: var(--accent); color: #fff; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; letter-spacing:.6px; text-transform:uppercase; }
+    .header h1 { font-size:28px; font-weight:800; background:linear-gradient(90deg,#f472b6,#a78bfa); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .header p { color:var(--text-muted); font-size:14px; margin-top:6px; }
+    .meta-row { display:flex; gap:24px; margin-top:18px; flex-wrap:wrap; }
+    .meta-item { display:flex; align-items:center; gap:6px; font-size:12px; color:var(--text-muted); }
+    .meta-item strong { color:var(--text); }
+
+    /* Scores */
+    .scores { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; padding:28px 48px; border-bottom:1px solid var(--border); }
+    .score-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:20px; text-align:center; transition:transform .2s; }
+    .score-card:hover { transform:translateY(-2px); }
+    .score-val { font-size:36px; font-weight:800; line-height:1; }
+    .score-card .label { font-size:12px; color:var(--text-muted); margin-top:6px; text-transform:uppercase; letter-spacing:.5px; }
+    .c-green{color:var(--green)} .c-red{color:var(--red)} .c-yellow{color:var(--yellow)} .c-blue{color:var(--blue)}
+
+    /* Main */
+    .main { padding:28px 48px; }
+    .section-title { font-size:18px; font-weight:700; margin-bottom:20px; display:flex; align-items:center; gap:10px; }
+    .section-title::before { content:''; display:inline-block; width:4px; height:22px; background:var(--accent); border-radius:4px; }
+
+    /* Screenshots */
+    .screenshots-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:36px; }
+    .screen-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; }
+    .screen-header { padding:14px 18px; display:flex; align-items:center; gap:10px; border-bottom:1px solid var(--border); }
+    .screen-dot { width:10px; height:10px; border-radius:50%; }
+    .dot-figma{background:#a78bfa} .dot-actual{background:#34d399}
+    .screen-label { font-size:13px; font-weight:600; }
+    .screen-source { margin-left:auto; font-size:11px; color:var(--text-muted); }
+    .screen-body { padding:20px; display:flex; justify-content:center; background:#e8e8e8; min-height:500px; align-items:flex-start; position:relative; }
+    .screen-body img { max-height:500px; max-width:100%; object-fit:contain; border-radius:12px; box-shadow:0 8px 32px rgba(0,0,0,.4); }
+    .placeholder { display:flex; flex-direction:column; align-items:center; justify-content:center; width:100%; height:480px; gap:10px; }
+    .placeholder .icon { font-size:48px; }
+    .placeholder p { font-size:13px; color:#666; text-align:center; line-height:1.6; }
+    code { background:#ddd; padding:2px 6px; border-radius:3px; font-family:monospace; }
+
+    /* Annotation overlays */
+    .ann { position:absolute; border:2px solid; border-radius:4px; pointer-events:none; }
+    .ann-lbl { position:absolute; top:-22px; left:0; font-size:10px; font-weight:700; padding:2px 6px; border-radius:3px; white-space:nowrap; color:#fff; }
+    .ann-red { border-color:#ef4444; } .ann-red .ann-lbl{background:#ef4444;}
+    .ann-yellow { border-color:#f59e0b; } .ann-yellow .ann-lbl{background:#f59e0b; color:#000;}
+    .ann-dashed { border-style:dashed; }
+
+    /* Issues Table */
+    .issues-section { margin-bottom:36px; }
+    .issues-table { width:100%; border-collapse:collapse; font-size:13px; }
+    .issues-table thead tr { background:var(--surface2); border-bottom:2px solid var(--border); }
+    .issues-table th { padding:12px 16px; text-align:left; font-weight:600; color:var(--text-muted); font-size:11px; text-transform:uppercase; letter-spacing:.5px; }
+    .issues-table tbody tr { border-bottom:1px solid var(--border); transition:background .15s; }
+    .issues-table tbody tr:hover { background:var(--surface2); }
+    .issues-table td { padding:14px 16px; vertical-align:top; line-height:1.6; }
+    .pill { display:inline-flex; align-items:center; gap:5px; padding:3px 10px; border-radius:20px; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.4px; }
+    .pill-critical{background:#2d1515;color:var(--red);border:1px solid #7f1d1d;}
+    .pill-minor{background:#2d2215;color:var(--yellow);border:1px solid #78350f;}
+    .pill-info{background:#151d2d;color:var(--blue);border:1px solid #1e3a5f;}
+    .diff-del{background:#3d1a1a;color:#ff8080;padding:1px 6px;border-radius:3px;font-family:monospace;font-size:12px;}
+    .diff-add{background:#1a3d1a;color:#80ff80;padding:1px 6px;border-radius:3px;font-family:monospace;font-size:12px;}
+
+    /* Elements Grid */
+    .elements-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:12px; margin-bottom:36px; }
+    .elem-card { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:14px 16px; display:flex; align-items:center; gap:12px; }
+    .elem-icon { font-size:18px; width:34px; height:34px; display:flex; align-items:center; justify-content:center; border-radius:8px; flex-shrink:0; }
+    .icon-pass{background:#152d1f} .icon-fail{background:#2d1515} .icon-warn{background:#2d2215}
+    .elem-name{font-size:13px;font-weight:500;line-height:1.3;}
+    .elem-status{font-size:11px;margin-top:2px;}
+    .text-green{color:var(--green)} .text-red{color:var(--red)} .text-yellow{color:var(--yellow)}
+
+    footer { text-align:center; padding:24px; color:var(--text-muted); font-size:12px; border-top:1px solid var(--border); margin-top:20px; }
+
+    /* Layout diff card */
+    .layout-diff { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:20px 0 36px; }
+    .layout-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:20px; }
+    .layout-card h4 { font-size:13px; font-weight:700; margin-bottom:12px; border-bottom:1px solid var(--border); padding-bottom:8px; }
+    .layout-item { display:flex; align-items:flex-start; gap:8px; padding:6px 0; font-size:13px; border-bottom:1px solid var(--border); }
+    .layout-item:last-child { border-bottom:none; }
+    .stat-box { display:inline-flex; flex-direction:column; align-items:center; background:var(--surface2); border:1px solid var(--border); border-radius:8px; padding:6px 12px; font-size:12px; }
+    .stat-box strong { font-size:18px; font-weight:700; }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ── -->
+<div class="header">
+  <div class="header-top">
+    <span class="badge">UI Comparison</span>
+    <h1>Dashboard Screen — Figma vs Actual App</h1>
+  </div>
+  <p>VD App · Android · Automated Visual Comparison Report</p>
+  <div class="meta-row">
+    <div class="meta-item">📅 <strong>Date:</strong> 2026-03-24</div>
+    <div class="meta-item">📱 <strong>Platform:</strong> Android</div>
+    <div class="meta-item">🎨 <strong>Screen:</strong> Dashboard / Home</div>
+    <div class="meta-item">📊 <strong>Status:</strong> Issues Found</div>
+  </div>
+</div>
+
+<!-- ── Score Cards ── -->
+<div class="scores">
+  <div class="score-card"><div class="score-val c-green">5</div><div class="label">/ 14 Elements Match</div></div>
+  <div class="score-card"><div class="score-val c-red">3</div><div class="label">Missing Elements</div></div>
+  <div class="score-card"><div class="score-val c-yellow">4</div><div class="label">Text / Label Issues</div></div>
+  <div class="score-card"><div class="score-val c-blue">2</div><div class="label">Layout Differences</div></div>
+</div>
+
+<div class="main">
+
+  <!-- ── Screenshots ── -->
+  <div class="section-title">Side-by-Side Screenshot Comparison</div>
+  <div class="screenshots-grid">
+
+    <!-- Figma -->
+    <div class="screen-card">
+      <div class="screen-header">
+        <div class="screen-dot dot-figma"></div>
+        <span class="screen-label">🎨 Figma Design</span>
+        <span class="screen-source">VD App — Dashboard</span>
+      </div>
+      <div class="screen-body">
+        <img src="screenshots/figma_dashboard.png" alt="Figma Dashboard"
+             onerror="this.style.display='none';this.nextSibling.style.display='flex';" />
+        <div class="placeholder" style="display:none;">
+          <div class="icon">🎨</div>
+          <p>Save Figma dashboard screenshot as:<br/><code>screenshots/figma_dashboard.png</code></p>
+        </div>
+        <!-- Annotations: greeting bar -->
+        <div class="ann ann-red" style="top:38px;left:8%;width:84%;height:52px;">
+          <div class="ann-lbl">✅ Figma: Hello [Name] + Avatar</div>
+        </div>
+        <!-- Stats layout -->
+        <div class="ann ann-yellow" style="top:185px;left:8%;width:84%;height:130px;">
+          <div class="ann-lbl">⚠️ Stats Layout: 1 large + 2 small</div>
+        </div>
+        <!-- Promo card -->
+        <div class="ann ann-red" style="top:330px;left:8%;width:84%;height:130px;">
+          <div class="ann-lbl">✅ Promo Card</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Actual -->
+    <div class="screen-card">
+      <div class="screen-header">
+        <div class="screen-dot dot-actual"></div>
+        <span class="screen-label">📱 Actual App</span>
+        <span class="screen-source">Android Phone</span>
+      </div>
+      <div class="screen-body">
+        <img src="screenshots/actual_dashboard.png" alt="Actual Dashboard"
+             onerror="this.style.display='none';this.nextSibling.style.display='flex';" />
+        <div class="placeholder" style="display:none;">
+          <div class="icon">📱</div>
+          <p>Save actual dashboard screenshot as:<br/><code>screenshots/actual_dashboard.png</code></p>
+        </div>
+        <!-- Missing greeting -->
+        <div class="ann ann-red ann-dashed" style="top:38px;left:8%;width:84%;height:42px;">
+          <div class="ann-lbl">❌ MISSING: Hello + Avatar + Subtitle</div>
+        </div>
+        <!-- Stats layout diff -->
+        <div class="ann ann-yellow" style="top:195px;left:8%;width:84%;height:75px;">
+          <div class="ann-lbl">⚠️ Stats Layout: 3 equal cards (different)</div>
+        </div>
+        <!-- Quick Action -->
+        <div class="ann ann-red ann-dashed" style="top:425px;left:8%;width:84%;height:110px;">
+          <div class="ann-lbl">🔵 Extra: Quick Action section (not in Figma)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Issues Table ── -->
+  <div class="issues-section">
+    <div class="section-title">Issues Found</div>
+    <table class="issues-table">
+      <thead>
+        <tr>
+          <th>#</th><th>Severity</th><th>Element</th><th>Figma</th><th>Actual App</th><th>Fix Required</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><span class="pill pill-critical">🔴 Critical</span></td>
+          <td><strong>Greeting Header</strong></td>
+          <td>
+            <div style="font-size:16px;font-weight:700;">Hello <span style="color:#ef4444;">Wilson</span></div>
+            <div style="color:var(--text-muted);font-size:12px;">Personalised greeting in red</div>
+          </td>
+          <td>❌ Not present — shows plain <code>"VD App"</code> in app bar only</td>
+          <td>Implement personalised greeting section with user's name in brand red colour</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><span class="pill pill-critical">🔴 Critical</span></td>
+          <td><strong>User Avatar</strong></td>
+          <td>Circular profile photo (top right)</td>
+          <td>❌ Not present — only bell notification icon</td>
+          <td>Add circular user avatar in the AppBar, linked to profile</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><span class="pill pill-critical">🔴 Critical</span></td>
+          <td><strong>Tagline Subtitle</strong></td>
+          <td>"Your business. Simplified."</td>
+          <td>❌ Not present</td>
+          <td>Add tagline text below the greeting</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><span class="pill pill-minor">🟡 Minor</span></td>
+          <td><strong>Section Subtitle Text</strong></td>
+          <td class="diff-add">Track views per listing via the Analytics section</td>
+          <td class="diff-del">Track your active businesses and overall performance at a glance.</td>
+          <td>Update subtitle text to match Figma copy</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><span class="pill pill-minor">🟡 Minor</span></td>
+          <td><strong>Stat Card Labels</strong></td>
+          <td>
+            <div>• <b>Total Listing Business</b></div>
+            <div>• <b>Total Viewed</b></div>
+            <div>• <b>Total Review</b></div>
+          </td>
+          <td>
+            <div>• <span class="diff-del">Business List</span></div>
+            <div>• <span class="diff-del">Total Views</span></div>
+            <div>• <span class="diff-del">Total Clicks</span></div>
+          </td>
+          <td>Match stat labels exactly as in Figma design</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><span class="pill pill-minor">🟡 Minor</span></td>
+          <td><strong>Stats Layout</strong></td>
+          <td>1 large stat (left) + 2 smaller stats stacked (right)</td>
+          <td>3 equal-sized stat cards in a row</td>
+          <td>Implement asymmetric stat layout matching Figma</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><span class="pill pill-info">🔵 Observation</span></td>
+          <td><strong>"Quick Action" Section</strong></td>
+          <td>Not visible in Figma (may be below fold)</td>
+          <td>Present: Boost Listing, Manage Ads, etc.</td>
+          <td>Confirm with Figma if Quick Action section belongs here</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── Layout Difference ── -->
+  <div class="section-title">Stats Layout Difference</div>
+  <div class="layout-diff">
+    <div class="layout-card">
+      <h4>🎨 Figma — Asymmetric Layout</h4>
+      <div style="display:flex;gap:12px;margin-top:8px;">
+        <div class="stat-box" style="flex:2;"><strong>1</strong><span>Total Listing Business</span></div>
+        <div style="display:flex;flex-direction:column;gap:8px;flex:1;">
+          <div class="stat-box"><strong>0</strong><span>Total Viewed</span></div>
+          <div class="stat-box"><strong>0</strong><span>Total Review</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="layout-card">
+      <h4>📱 Actual App — 3-Column Layout</h4>
+      <div style="display:flex;gap:8px;margin-top:8px;">
+        <div class="stat-box"><strong>2</strong><span>Business List</span></div>
+        <div class="stat-box"><strong>1</strong><span>Total Views</span></div>
+        <div class="stat-box"><strong>0</strong><span>Total Clicks</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Elements Checklist ── -->
+  <div class="section-title">All Elements Checklist</div>
+  <div class="elements-grid">
+    <div class="elem-card"><div class="elem-icon icon-fail">👋</div><div><div class="elem-name">Hello [Name] Greeting</div><div class="elem-status text-red">❌ MISSING</div></div></div>
+    <div class="elem-card"><div class="elem-icon icon-fail">🖼️</div><div><div class="elem-name">User Avatar</div><div class="elem-status text-red">❌ MISSING</div></div></div>
+    <div class="elem-card"><div class="elem-icon icon-fail">💬</div><div><div class="elem-name">"Your business. Simplified."</div><div class="elem-status text-red">❌ MISSING</div></div></div>
+    <div class="elem-card"><div class="elem-icon icon-pass">🔔</div><div><div class="elem-name">Notification Bell Icon</div><div class="elem-status text-green">✅ Match</div></div></div>
+    <div class="elem-card"><div class="elem-icon icon-pass">📊</div><div><div class="elem-name">"Your Business at a Glance"</div><div class="elem-status text-green">✅ Match</div></div></div>
+    <div class="elem-card"><div class="elem-icon icon-warn">📝</div><div><div class="elem-name">Section Subtitle</div><div class="elem-status text-yellow">⚠️ Text Differs</div></div></div>
+    <div class="elem-card"><div class="elem-icon icon-warn">📈</div><div><div class="elem-name">Stat Cards Layout</div><div class="elem-status text-yellow">⚠️ Layout Differs</div></div></div>
+    <div class="elem-card"><div class="elem-icon icon-warn">🏷️</div><div><div class="elem-name">Stat Card Labels</div><div class="elem-status text-yellow">⚠️ Names Differ</div></div></div>
+    <div class="elem-card"><div class="elem-icon icon-pass">🔴</div><div><div class="elem-name">Promo Card (Red)</div><div class="elem-status text-green">✅ Match</div></div></div>
+    <div class="elem-card"><div class="elem-icon icon-pass">📍</div><div><div class="elem-name">Promo Body Text</div><div class="elem-status text-green">✅ Match</div></div></div>
+    <div class="elem-card"><div class="elem-icon icon-pass">🔘</div><div><div class="elem-name">"Add More Branches" Button</div><div class="elem-status text-green">✅ Match</div></div></div>
+    <div class="elem-card"><div class="elem-icon icon-pass">🏠</div><div><div class="elem-name">Bottom Navigation Bar</div><div class="elem-status text-green">✅ Match</div></div></div>
+    <div class="elem-card"><div class="elem-icon icon-warn">⚡</div><div><div class="elem-name">Quick Action Section</div><div class="elem-status text-yellow">⚠️ Not in Figma visible area</div></div></div>
+    <div class="elem-card"><div class="elem-icon icon-pass">➕</div><div><div class="elem-name">FAB (+) Button</div><div class="elem-status text-green">✅ Match</div></div></div>
+  </div>
+
+  <!-- Screenshot instructions -->
+  <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:28px;">
+    <div style="font-size:15px;font-weight:700;margin-bottom:10px;">📸 To embed screenshots in this report</div>
+    <ol style="color:var(--text-muted);font-size:13px;line-height:2;padding-left:20px;">
+      <li>Save Figma screenshot → <code>reports/ui_comparison/screenshots/figma_dashboard.png</code></li>
+      <li>Save actual app screenshot → <code>reports/ui_comparison/screenshots/actual_dashboard.png</code></li>
+      <li>Refresh this HTML page — images appear automatically.</li>
+    </ol>
+  </div>
+
+</div>
+
+<footer>VD App Automation Framework &nbsp;·&nbsp; 2026-03-24 &nbsp;·&nbsp; Dashboard Screen v1.0</footer>
+</body>
+</html>

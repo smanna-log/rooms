@@ -1,0 +1,43 @@
+{
+  "valid": {
+    "email": "test@vdapp.com",
+    "password": "Test@1234",
+    "description": "Valid registered user credentials"
+  },
+  "invalid_password": {
+    "email": "test@vdapp.com",
+    "password": "WrongPass!99",
+    "expected_error": "Invalid email or password",
+    "description": "Correct email but wrong password"
+  },
+  "invalid_email_format": {
+    "email": "notanemail",
+    "password": "Test@1234",
+    "expected_error": "Enter a valid email address",
+    "description": "Malformed email address"
+  },
+  "unregistered_user": {
+    "email": "notregistered@vdapp.com",
+    "password": "Test@1234",
+    "expected_error": "No account found",
+    "description": "Email not registered in the system"
+  },
+  "empty_email": {
+    "email": "",
+    "password": "Test@1234",
+    "expected_error": "Email address is required",
+    "description": "Email field left empty"
+  },
+  "empty_password": {
+    "email": "test@vdapp.com",
+    "password": "",
+    "expected_error": "Password is required",
+    "description": "Password field left empty"
+  },
+  "empty_all_fields": {
+    "email": "",
+    "password": "",
+    "expected_error": "Email address is required",
+    "description": "Both fields left empty"
+  }
+}

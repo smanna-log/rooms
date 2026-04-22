@@ -1,0 +1,14 @@
+2026-04-08 12:13:32.929 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-08 12:13:32.933 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-08 12:13:32.934 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-08 12:13:33.962 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-08 12:13:33.962 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-08 12:13:33.966 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-08 12:13:33.967 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-08 12:13:33.970 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-08 12:14:13.975 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-08 12:14:23.978 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 2/30
+2026-04-08 12:14:33.981 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 3/30
+2026-04-08 12:14:43.984 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 4/30
+2026-04-08 12:14:53.987 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 5/30
+2026-04-08 12:15:03.989 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 6/30

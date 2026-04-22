@@ -1,0 +1,36 @@
+# Dependencies
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Logs
+logs/
+*.log
+
+# Reports (keep local, CI generates its own)
+reports/
+test-output/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Maven
+.m2/
+
+# Appium
+.appium/
+
+# Environment
+*.env
+.env.local

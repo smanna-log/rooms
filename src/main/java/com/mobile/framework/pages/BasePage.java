@@ -114,4 +114,25 @@ public class BasePage {
     protected void scrollUp() {
         CommonActionsUtility.scrollUp(driver);
     }
+
+    /**
+     * Accept Android system permission if present
+     */
+    public void acceptPermissionIfPresent() {
+        CommonActionsUtility.acceptPermissionIfPresent(driver);
+    }
+
+    /**
+     * Swipe left (right to left)
+     */
+    protected void swipeLeft() {
+        CommonActionsUtility.swipeLeft(driver);
+    }
+
+    /**
+     * Swipe right (left to right)
+     */
+    public void swipeRight() {
+        CommonActionsUtility.swipeRight(driver);
+    }
 }

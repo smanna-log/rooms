@@ -1,16 +1,17 @@
 package com.mobile.framework.utilities;
 
 import io.appium.java_client.AppiumDriver;
-
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.time.Duration;
+import org.openqa.selenium.interactions.PointerInput;
+import org.openqa.selenium.interactions.Sequence;
 
 /**
  * Common Actions Utility class to provide common mobile interactions
@@ -124,5 +125,54 @@ public class CommonActionsUtility {
             logger.error("Failed to scroll up: " + e.getMessage());
             throw e;
         }
+    }
+
+    /**
+     * Accept Android system permission if present
+     * 
+     * @param driver AppiumDriver instance
+     */
+    public static void acceptPermissionIfPresent(AppiumDriver driver) {
+        By permissionBtn = By.id("com.android.permissioncontroller:id/permission_allow_button");
+        try {
+            WebElement element = WaitUtility.waitForElementVisible(driver, permissionBtn, 5);
+            element.click();
+            logger.info("Clicked on permission allow button");
+        } catch (Exception e) {
+            logger.info("Permission dialog not present or already handled");
+        }
+    }
+
+    /**
+     * Swipe from right to left (next screen in onboarding)
+     */
+    public static void swipeLeft(AppiumDriver driver) {
+        Dimension size = driver.manage().window().getSize();
+        int startX = (int) (size.width * 0.8);
+        int endX = (int) (size.width * 0.2);
+        int y = size.height / 2;
+        swipe(driver, startX, y, endX, y);
+    }
+
+    /**
+     * Swipe from left to right (previous screen)
+     */
+    public static void swipeRight(AppiumDriver driver) {
+        Dimension size = driver.manage().window().getSize();
+        int startX = (int) (size.width * 0.2);
+        int endX = (int) (size.width * 0.8);
+        int y = size.height / 2;
+        swipe(driver, startX, y, endX, y);
+    }
+
+    private static void swipe(AppiumDriver driver, int startX, int startY, int endX, int endY) {
+        PointerInput finger = new PointerInput(org.openqa.selenium.interactions.PointerInput.Kind.TOUCH, "finger");
+        Sequence sequence = new Sequence(finger, 1);
+        sequence.addAction(finger.createPointerMove(Duration.ZERO, org.openqa.selenium.interactions.PointerInput.Origin.viewport(), startX, startY));
+        sequence.addAction(finger.createPointerDown(org.openqa.selenium.interactions.PointerInput.MouseButton.LEFT.asArg()));
+        sequence.addAction(finger.createPointerMove(Duration.ofMillis(600), org.openqa.selenium.interactions.PointerInput.Origin.viewport(), endX, endY));
+        sequence.addAction(finger.createPointerUp(org.openqa.selenium.interactions.PointerInput.MouseButton.LEFT.asArg()));
+        driver.perform(Collections.singletonList(sequence));
+        logger.info("Swiped from (" + startX + "," + startY + ") to (" + endX + "," + endY + ")");
     }
 }

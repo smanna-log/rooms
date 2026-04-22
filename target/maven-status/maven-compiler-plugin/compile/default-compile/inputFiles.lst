@@ -1,16 +1,21 @@
-C:\Users\ASUS\OneDrive\Desktop\Mobile_Framework\src\main\java\com\mobile\framework\Main.java
-C:\Users\ASUS\OneDrive\Desktop\Mobile_Framework\src\main\java\com\mobile\framework\utilities\LoggerUtility.java
-C:\Users\ASUS\OneDrive\Desktop\Mobile_Framework\src\main\java\com\mobile\framework\pages\LoginPage.java
-C:\Users\ASUS\OneDrive\Desktop\Mobile_Framework\src\main\java\com\mobile\framework\config\ConfigManager.java
-C:\Users\ASUS\OneDrive\Desktop\Mobile_Framework\src\main\java\com\mobile\framework\utilities\CommonActionsUtility.java
-C:\Users\ASUS\OneDrive\Desktop\Mobile_Framework\src\main\java\com\mobile\framework\utilities\RetryAnalyzer.java
-C:\Users\ASUS\OneDrive\Desktop\Mobile_Framework\src\main\java\com\mobile\framework\drivers\DriverFactory.java
-C:\Users\ASUS\OneDrive\Desktop\Mobile_Framework\src\main\java\com\mobile\framework\pages\BasePage.java
-C:\Users\ASUS\OneDrive\Desktop\Mobile_Framework\src\main\java\com\mobile\framework\pages\SignupPage.java
-C:\Users\ASUS\OneDrive\Desktop\Mobile_Framework\src\main\java\com\mobile\framework\reports\ExtentReportManager.java
-C:\Users\ASUS\OneDrive\Desktop\Mobile_Framework\src\main\java\com\mobile\framework\utilities\WaitUtility.java
-C:\Users\ASUS\OneDrive\Desktop\Mobile_Framework\src\main\java\com\mobile\framework\base\BaseTest.java
-C:\Users\ASUS\OneDrive\Desktop\Mobile_Framework\src\main\java\com\mobile\framework\drivers\AppiumServerManager.java
-C:\Users\ASUS\OneDrive\Desktop\Mobile_Framework\src\main\java\com\mobile\framework\utilities\AnnotationTransformer.java
-C:\Users\ASUS\OneDrive\Desktop\Mobile_Framework\src\main\java\com\mobile\framework\utilities\ScreenshotUtility.java
-C:\Users\ASUS\OneDrive\Desktop\Mobile_Framework\src\main\java\com\mobile\framework\utilities\EmulatorManager.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/pages/SignInPage.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/reports/ExtentReportManager.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/utilities/EmulatorManager.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/pages/DashboardPage.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/utilities/LocalDeviceManager.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/utilities/AnnotationTransformer.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/utilities/ScrollUtility.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/utilities/LoggerUtility.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/pages/RegistrationPage.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/utilities/ResponsiveValidator.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/pages/BasePage.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/utilities/RetryAnalyzer.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/Main.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/base/BaseTest.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/config/ConfigManager.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/utilities/CommonActionsUtility.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/drivers/AppiumServerManager.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/utilities/ScreenshotUtility.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/drivers/DriverFactory.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/pages/LoginPage.java
+/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/java/com/mobile/framework/utilities/WaitUtility.java

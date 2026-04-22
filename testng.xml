@@ -4,8 +4,8 @@
     
     <!-- Listeners for the test suite -->
     <listeners>
-        <!-- Retry listener to retry failed tests -->
-        <listener class-name="com.mobile.framework.utilities.RetryAnalyzer" />
+        <!-- Annotation Transformer to set retry analyzer for test methods -->
+        <listener class-name="com.mobile.framework.utilities.AnnotationTransformer" />
     </listeners>
     
     <!-- Test definition for Login functionality -->
@@ -21,5 +21,11 @@
             <class name="com.mobile.framework.tests.SignupTest" />
         </classes>
     </test>
-    
+
+    <!-- Test definition for Registration functionality -->
+    <test name="RegistrationTests" enabled="true">
+        <classes>
+            <class name="com.mobile.framework.tests.RegistrationTest" />
+        </classes>
+    </test>
 </suite>

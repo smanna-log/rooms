@@ -13,10 +13,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 /**
  * Base Test class that provides common setup and teardown methods for all test classes
- * This class handles Appium server startup/shutdown, driver initialization, and reporting
+ * This class handles Appium server startup/shutdown conditionally (local vs browserstack), 
+ * driver initialization via TestNG parameters, and reporting
  */
 public class BaseTest {
     
@@ -24,32 +27,47 @@ public class BaseTest {
     protected static final LoggerUtility logger = new LoggerUtility(BaseTest.class);
     
     /**
-     * Setup method to start Appium server and initialize driver before suite execution
+     * Setup method to conditionally start Appium server before suite execution
      */
     @BeforeSuite(alwaysRun = true)
     public void setUpSuite() {
         logger.info("Setting up test suite...");
         
         try {
-            // Start ADB server
-            EmulatorManager.startAdbServer();
-            logger.info("ADB server started successfully");
+            String executionType = ConfigManager.getInstance().getProperty("execution.type", "local");
             
-            // Check if device is connected, if not start emulator
-            String udid = ConfigManager.getInstance().getProperty("android.udid");
-            int port = Integer.parseInt(udid.substring(udid.lastIndexOf("-") + 1));
-            
-            if (!EmulatorManager.isEmulatorRunning(port)) {
-                logger.info("No device connected, starting emulator...");
-                String avdName = ConfigManager.getInstance().getProperty("android.avd.name", "Nexus_5X_API_30");
-                EmulatorManager.startEmulator(avdName, port);
+            if (executionType.equalsIgnoreCase("local")) {
+                logger.info("Execution type is LOCAL. Initiating local dependencies.");
+                
+                // Start ADB server
+                EmulatorManager.startAdbServer();
+                logger.info("ADB server started successfully");
+                
+                // Check if device is connected, if not start emulator
+                String udid = ConfigManager.getInstance().getProperty("android.udid");
+                int port = 5554;
+                if (udid != null && udid.contains("-")) {
+                    try {
+                        port = Integer.parseInt(udid.substring(udid.lastIndexOf("-") + 1));
+                    } catch (NumberFormatException e) {
+                        logger.warn("Could not parse emulator port from UDID, defaulting to 5554");
+                    }
+                }
+                
+                if (!EmulatorManager.isEmulatorRunning(port)) {
+                    logger.info("No device connected, starting emulator...");
+                    String avdName = ConfigManager.getInstance().getProperty("android.avd.name", "Pixel_9_Pro_API_33");
+                    EmulatorManager.startEmulator(avdName, port);
+                } else {
+                    logger.info("Device already connected: " + udid);
+                }
+                
+                // Start Appium server
+                AppiumServerManager.startServer();
+                logger.info("Appium server started successfully");
             } else {
-                logger.info("Device already connected: " + udid);
+                logger.info("Execution type is REMOTE (" + executionType + "). Skipping local server setup.");
             }
-            
-            // Start Appium server
-            AppiumServerManager.startServer();
-            logger.info("Appium server started successfully");
         } catch (Exception e) {
             logger.error("Failed to set up test suite: " + e.getMessage());
             throw new RuntimeException("Failed to set up test suite", e);
@@ -57,16 +75,17 @@ public class BaseTest {
     }
     
     /**
-     * Setup method to initialize driver before each test method
+     * Setup method to initialize driver before each test method using TestNG XML parameters
      */
+    @Parameters({"deviceName", "platformVersion", "platformName"})
     @BeforeMethod(alwaysRun = true)
-    public void setUp() {
+    public void setUp(@Optional String deviceName, @Optional String platformVersion, @Optional String platformName) {
         logger.info("Setting up test method...");
         
         try {
-            // Initialize driver
-            driver = DriverFactory.initDriver();
-            logger.info("Driver initialized successfully");
+            // Initialize driver with dynamic parameters for parallel execution
+            driver = DriverFactory.initDriver(deviceName, platformVersion, platformName, null);
+            logger.info("Driver initialized successfully for device: " + deviceName);
         } catch (Exception e) {
             logger.error("Failed to initialize driver: " + e.getMessage());
             throw new RuntimeException("Failed to initialize driver", e);
@@ -99,20 +118,24 @@ public class BaseTest {
     }
     
     /**
-     * Teardown method to stop Appium server after suite execution
+     * Teardown method to conditionally stop Appium server after suite execution
      */
     @AfterSuite(alwaysRun = true)
     public void tearDownSuite() {
         logger.info("Tearing down test suite...");
         
         try {
-            // Stop Appium server
-            AppiumServerManager.stopServer();
-            logger.info("Appium server stopped successfully");
+            String executionType = ConfigManager.getInstance().getProperty("execution.type", "local");
             
-            // Stop emulator if it was started by the framework
-            EmulatorManager.stopEmulator();
-            logger.info("Emulator stopped if it was started by framework");
+            if (executionType.equalsIgnoreCase("local")) {
+                // Stop Appium server
+                AppiumServerManager.stopServer();
+                logger.info("Appium server stopped successfully");
+                
+                // Stop emulator if it was started by the framework
+                EmulatorManager.stopEmulator();
+                logger.info("Emulator stopped if it was started by framework");
+            }
             
             // Flush Extent Reports
             ExtentReportManager.flushReports();

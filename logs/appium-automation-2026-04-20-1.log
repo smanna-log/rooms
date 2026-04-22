@@ -1,0 +1,829 @@
+2026-04-17 11:12:33.394 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-17 11:12:33.399 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-17 11:12:33.399 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-17 11:12:34.425 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-17 11:12:34.426 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-17 11:12:34.428 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-17 11:12:34.428 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-17 11:12:34.430 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-17 11:13:04.698 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator is ready for use
+2026-04-17 11:13:04.699 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator started successfully: Pixel_9_Pro_API_33 on port: 5554
+2026-04-17 11:13:04.701 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Starting Appium Server...
+2026-04-17 11:13:13.851 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server started successfully on 127.0.0.1:4723
+2026-04-17 11:13:13.851 [main] INFO  com.mobile.framework.base.BaseTest - Appium server started successfully
+2026-04-17 11:13:13.899 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-17 11:13:13.914 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-17 11:13:36.951 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for null
+2026-04-17 11:13:36.952 [main] INFO  com.mobile.framework.base.BaseTest - Driver initialized successfully for device: null
+2026-04-17 11:13:37.040 [main] INFO  com.mobile.framework.tests.ResponsiveTest - >>> Validating: Galaxy S20 (Android 10)
+2026-04-17 11:13:37.055 [main] INFO  com.mobile.framework.utilities.LocalDeviceManager - Set resolution to 1080x2400 for emulator-5554
+2026-04-17 11:13:37.067 [main] INFO  com.mobile.framework.utilities.LocalDeviceManager - Set density to 480 for emulator-5554
+2026-04-17 11:13:37.070 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for Galaxy S20 (Android 10)...
+2026-04-17 11:13:52.036 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for Galaxy S20 (Android 10)
+2026-04-17 11:14:03.464 [main] ERROR com.mobile.framework.utilities.WaitUtility - Element not visible within 5 seconds: By.id: com.android.permissioncontroller:id/permission_allow_button
+2026-04-17 11:14:03.470 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Permission dialog not present or already handled
+2026-04-17 11:14:05.114 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Swiped from (216,1200) to (864,1200)
+2026-04-17 11:14:05.116 [main] INFO  com.mobile.framework.pages.BasePage - Performed onboarding slide 1
+2026-04-17 11:14:06.660 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Swiped from (216,1200) to (864,1200)
+2026-04-17 11:14:06.662 [main] INFO  com.mobile.framework.pages.BasePage - Performed onboarding slide 2
+2026-04-17 11:14:08.103 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Swiped from (216,1200) to (864,1200)
+2026-04-17 11:14:08.104 [main] INFO  com.mobile.framework.pages.BasePage - Performed onboarding slide 3
+2026-04-17 11:14:08.107 [main] INFO  com.mobile.framework.tests.ResponsiveTest - [Galaxy S20] Screen size: (1080, 2400)
+2026-04-17 11:14:09.011 [main] INFO  com.mobile.framework.utilities.ScrollUtility - Swiped from (540,1920) to (540,480)
+2026-04-17 11:14:13.948 [main] INFO  com.mobile.framework.utilities.LocalDeviceManager - Reset display for emulator-5554
+2026-04-17 11:14:13.962 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-17 11:14:13.963 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-17 11:14:13.963 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver quit successfully
+2026-04-17 11:14:13.963 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-17 11:14:13.979 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-17 11:14:13.980 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-17 11:14:23.228 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for null
+2026-04-17 11:14:23.228 [main] INFO  com.mobile.framework.base.BaseTest - Driver initialized successfully for device: null
+2026-04-17 11:14:23.229 [main] INFO  com.mobile.framework.tests.ResponsiveTest - >>> Validating: Pixel 6 (Android 12)
+2026-04-17 11:14:23.231 [main] INFO  com.mobile.framework.utilities.LocalDeviceManager - Set resolution to 1080x2400 for emulator-5554
+2026-04-17 11:14:23.232 [main] INFO  com.mobile.framework.utilities.LocalDeviceManager - Set density to 411 for emulator-5554
+2026-04-17 11:14:23.233 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for Pixel 6 (Android 12)...
+2026-04-17 11:14:31.409 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for Pixel 6 (Android 12)
+2026-04-17 11:14:42.270 [main] ERROR com.mobile.framework.utilities.WaitUtility - Element not visible within 5 seconds: By.id: com.android.permissioncontroller:id/permission_allow_button
+2026-04-17 11:14:42.271 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Permission dialog not present or already handled
+2026-04-17 11:14:45.044 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Swiped from (216,1200) to (864,1200)
+2026-04-17 11:14:45.044 [main] INFO  com.mobile.framework.pages.BasePage - Performed onboarding slide 1
+2026-04-17 11:14:50.345 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Swiped from (216,1200) to (864,1200)
+2026-04-17 11:14:50.345 [main] INFO  com.mobile.framework.pages.BasePage - Performed onboarding slide 2
+2026-04-17 11:14:51.296 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Swiped from (216,1200) to (864,1200)
+2026-04-17 11:14:51.299 [main] INFO  com.mobile.framework.pages.BasePage - Performed onboarding slide 3
+2026-04-17 11:14:51.300 [main] INFO  com.mobile.framework.tests.ResponsiveTest - [Pixel 6] Screen size: (1080, 2400)
+2026-04-17 11:14:54.805 [main] INFO  com.mobile.framework.utilities.ScrollUtility - Swiped from (540,1920) to (540,480)
+2026-04-17 11:15:01.005 [main] INFO  com.mobile.framework.utilities.LocalDeviceManager - Reset display for emulator-5554
+2026-04-17 11:15:01.012 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-17 11:15:01.013 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-17 11:15:01.013 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver quit successfully
+2026-04-17 11:15:01.013 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-17 11:15:01.014 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-17 11:15:01.020 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-17 11:15:09.823 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for null
+2026-04-17 11:15:09.824 [main] INFO  com.mobile.framework.base.BaseTest - Driver initialized successfully for device: null
+2026-04-17 11:15:09.825 [main] INFO  com.mobile.framework.tests.ResponsiveTest - >>> Validating: S23 Ultra (Android 13)
+2026-04-17 11:15:09.830 [main] INFO  com.mobile.framework.utilities.LocalDeviceManager - Set resolution to 1440x3088 for emulator-5554
+2026-04-17 11:15:09.832 [main] INFO  com.mobile.framework.utilities.LocalDeviceManager - Set density to 600 for emulator-5554
+2026-04-17 11:15:09.832 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for S23 Ultra (Android 13)...
+2026-04-17 11:15:20.425 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for S23 Ultra (Android 13)
+2026-04-17 11:15:31.279 [main] ERROR com.mobile.framework.utilities.WaitUtility - Element not visible within 5 seconds: By.id: com.android.permissioncontroller:id/permission_allow_button
+2026-04-17 11:15:31.280 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Permission dialog not present or already handled
+2026-04-17 11:15:32.033 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Swiped from (288,1544) to (1152,1544)
+2026-04-17 11:15:32.034 [main] INFO  com.mobile.framework.pages.BasePage - Performed onboarding slide 1
+2026-04-17 11:15:32.745 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Swiped from (288,1544) to (1152,1544)
+2026-04-17 11:15:32.746 [main] INFO  com.mobile.framework.pages.BasePage - Performed onboarding slide 2
+2026-04-17 11:15:33.484 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Swiped from (288,1544) to (1152,1544)
+2026-04-17 11:15:33.485 [main] INFO  com.mobile.framework.pages.BasePage - Performed onboarding slide 3
+2026-04-17 11:15:33.486 [main] INFO  com.mobile.framework.tests.ResponsiveTest - [S23 Ultra] Screen size: (1440, 3088)
+2026-04-17 11:15:34.322 [main] INFO  com.mobile.framework.utilities.ScrollUtility - Swiped from (720,2470) to (720,617)
+2026-04-17 11:15:38.764 [main] INFO  com.mobile.framework.utilities.LocalDeviceManager - Reset display for emulator-5554
+2026-04-17 11:15:38.774 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-17 11:15:38.775 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-17 11:15:38.776 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver quit successfully
+2026-04-17 11:15:38.776 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-17 11:15:38.778 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-17 11:15:38.782 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-17 11:15:48.060 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for null
+2026-04-17 11:15:48.063 [main] INFO  com.mobile.framework.base.BaseTest - Driver initialized successfully for device: null
+2026-04-17 11:15:48.067 [main] INFO  com.mobile.framework.tests.ResponsiveTest - >>> Validating: Pixel 8 Pro (Android 14)
+2026-04-17 11:15:48.076 [main] INFO  com.mobile.framework.utilities.LocalDeviceManager - Set resolution to 1344x2992 for emulator-5554
+2026-04-17 11:15:48.081 [main] INFO  com.mobile.framework.utilities.LocalDeviceManager - Set density to 480 for emulator-5554
+2026-04-17 11:15:48.082 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for Pixel 8 Pro (Android 14)...
+2026-04-17 11:15:55.327 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for Pixel 8 Pro (Android 14)
+2026-04-17 11:16:05.722 [main] ERROR com.mobile.framework.utilities.WaitUtility - Element not visible within 5 seconds: By.id: com.android.permissioncontroller:id/permission_allow_button
+2026-04-17 11:16:05.722 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Permission dialog not present or already handled
+2026-04-17 11:16:06.456 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Swiped from (268,1496) to (1075,1496)
+2026-04-17 11:16:06.458 [main] INFO  com.mobile.framework.pages.BasePage - Performed onboarding slide 1
+2026-04-17 11:16:07.188 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Swiped from (268,1496) to (1075,1496)
+2026-04-17 11:16:07.188 [main] INFO  com.mobile.framework.pages.BasePage - Performed onboarding slide 2
+2026-04-17 11:16:07.921 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Swiped from (268,1496) to (1075,1496)
+2026-04-17 11:16:07.922 [main] INFO  com.mobile.framework.pages.BasePage - Performed onboarding slide 3
+2026-04-17 11:16:07.922 [main] INFO  com.mobile.framework.tests.ResponsiveTest - [Pixel 8 Pro] Screen size: (1344, 2992)
+2026-04-17 11:16:08.730 [main] INFO  com.mobile.framework.utilities.ScrollUtility - Swiped from (672,2393) to (672,598)
+2026-04-17 11:16:17.326 [main] INFO  com.mobile.framework.utilities.LocalDeviceManager - Reset display for emulator-5554
+2026-04-17 11:16:17.340 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-17 11:16:17.341 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-17 11:16:17.341 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver quit successfully
+2026-04-17 11:16:17.341 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-17 11:16:17.348 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-17 11:16:17.350 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-17 11:16:27.740 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for null
+2026-04-17 11:16:27.741 [main] INFO  com.mobile.framework.base.BaseTest - Driver initialized successfully for device: null
+2026-04-17 11:16:27.741 [main] INFO  com.mobile.framework.tests.ResponsiveTest - >>> Validating: Generic Phone (Android 15)
+2026-04-17 11:16:27.746 [main] INFO  com.mobile.framework.utilities.LocalDeviceManager - Set resolution to 1080x2400 for emulator-5554
+2026-04-17 11:16:27.749 [main] INFO  com.mobile.framework.utilities.LocalDeviceManager - Set density to 420 for emulator-5554
+2026-04-17 11:16:27.752 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for Generic Phone (Android 15)...
+2026-04-17 11:16:35.895 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for Generic Phone (Android 15)
+2026-04-17 11:16:37.826 [main] ERROR com.mobile.framework.utilities.WaitUtility - Element not visible within 5 seconds: By.id: com.android.permissioncontroller:id/permission_allow_button
+2026-04-17 11:16:37.827 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Permission dialog not present or already handled
+2026-04-17 11:16:37.887 [main] ERROR com.mobile.framework.tests.ResponsiveTest - Error during validation for Generic Phone: A session is either terminated or not started
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-107-generic', java.version: '21.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [a2eeb4b9-09c0-4951-a88c-19ac7cca7e42, getCurrentWindowSize {}]
+Capabilities {appium:app: /home/wadmin/Desktop/Mobile..., appium:appActivity: com.roomservice.realstate.U..., appium:appPackage: com.roomservice.realstate, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /home/wadmin/Desktop/Mobile..., appActivity: com.roomservice.realstate.U..., appPackage: com.roomservice.realstate, automationName: UiAutomator2, deviceName: Generic Phone (Android 15), newCommandTimeout: 300, platformName: ANDROID, platformVersion: 15, udid: emulator-5554}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: a2eeb4b9-09c0-4951-a88c-19ac7cca7e42
+2026-04-17 11:16:37.921 [main] ERROR com.mobile.framework.tests.ResponsiveTest - Failed to setup simulation for Generic Phone
+2026-04-17 11:16:37.934 [main] INFO  com.mobile.framework.utilities.LocalDeviceManager - Reset display for emulator-5554
+2026-04-17 11:16:37.942 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-17 11:16:37.944 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-17 11:16:37.944 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver quit successfully
+2026-04-17 11:16:37.944 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-17 11:16:37.951 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-17 11:16:37.953 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-17 11:16:54.070 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for null
+2026-04-17 11:16:54.070 [main] INFO  com.mobile.framework.base.BaseTest - Driver initialized successfully for device: null
+2026-04-17 11:16:54.073 [main] INFO  com.mobile.framework.tests.ResponsiveTest - >>> Validating: Future Device (Android 16)
+2026-04-17 11:16:54.078 [main] INFO  com.mobile.framework.utilities.LocalDeviceManager - Set resolution to 1440x3200 for emulator-5554
+2026-04-17 11:16:54.085 [main] INFO  com.mobile.framework.utilities.LocalDeviceManager - Set density to 560 for emulator-5554
+2026-04-17 11:16:54.086 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for Future Device (Android 16)...
+2026-04-17 11:17:03.309 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for Future Device (Android 16)
+2026-04-17 11:17:14.289 [main] ERROR com.mobile.framework.utilities.WaitUtility - Element not visible within 5 seconds: By.id: com.android.permissioncontroller:id/permission_allow_button
+2026-04-17 11:17:14.293 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Permission dialog not present or already handled
+2026-04-17 11:17:15.023 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Swiped from (288,1600) to (1152,1600)
+2026-04-17 11:17:15.026 [main] INFO  com.mobile.framework.pages.BasePage - Performed onboarding slide 1
+2026-04-17 11:17:15.859 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Swiped from (288,1600) to (1152,1600)
+2026-04-17 11:17:15.869 [main] INFO  com.mobile.framework.pages.BasePage - Performed onboarding slide 2
+2026-04-17 11:17:16.976 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Swiped from (288,1600) to (1152,1600)
+2026-04-17 11:17:16.977 [main] INFO  com.mobile.framework.pages.BasePage - Performed onboarding slide 3
+2026-04-17 11:17:16.978 [main] INFO  com.mobile.framework.tests.ResponsiveTest - [Future Device] Screen size: (1440, 3200)
+2026-04-17 11:17:17.906 [main] INFO  com.mobile.framework.utilities.ScrollUtility - Swiped from (720,2560) to (720,640)
+2026-04-17 11:54:46.848 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-17 11:54:46.852 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-17 11:54:46.852 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-17 11:54:46.864 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-17 11:54:46.864 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-17 11:54:46.867 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-17 11:54:46.867 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-17 11:54:46.869 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-17 11:55:26.962 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-17 11:55:37.047 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 2/30
+2026-04-17 11:55:47.140 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 3/30
+2026-04-17 11:55:57.237 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 4/30
+2026-04-17 11:56:07.343 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 5/30
+2026-04-17 11:56:07.417 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator is ready for use
+2026-04-17 11:56:07.420 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator started successfully: Pixel_9_Pro_API_33 on port: 5554
+2026-04-17 11:56:07.425 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Starting Appium Server...
+2026-04-17 11:56:19.386 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server started successfully on 127.0.0.1:4723
+2026-04-17 11:56:19.393 [main] INFO  com.mobile.framework.base.BaseTest - Appium server started successfully
+2026-04-17 11:56:19.611 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-17 11:56:19.656 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-17 11:57:02.480 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for null
+2026-04-17 11:57:02.487 [main] INFO  com.mobile.framework.base.BaseTest - Driver initialized successfully for device: null
+2026-04-17 11:57:02.780 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Initializing Extent Reports...
+2026-04-17 11:57:04.315 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Extent Reports initialized successfully. Report will be saved to: ./reports/AutomationReport_20260417-115702.html
+2026-04-17 11:57:04.358 [main] INFO  com.mobile.framework.tests.RegistrationTest - Starting test: testDynamicRegistrationWithExplicitWait
+2026-04-17 11:57:21.499 [main] ERROR com.mobile.framework.utilities.WaitUtility - Element not visible within 5 seconds: By.id: com.android.permissioncontroller:id/permission_allow_button
+2026-04-17 11:57:21.504 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Permission dialog not present or already handled
+2026-04-17 11:57:55.226 [main] ERROR com.mobile.framework.utilities.WaitUtility - Element not visible within 30 seconds: By.id: com.roomservice.realstate:id/CreateNewAccount
+2026-04-17 11:57:55.262 [main] ERROR com.mobile.framework.pages.BasePage - Registration page is not displayed: Expected condition failed: waiting for visibility of element located by By.id: com.roomservice.realstate:id/CreateNewAccount (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-107-generic', java.version: '21.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /home/wadmin/Desktop/Mobile..., appium:appActivity: com.roomservice.realstate.U..., appium:appPackage: com.roomservice.realstate, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /home/wadmin/Desktop/Mobile..., appActivity: com.roomservice.realstate.U..., appPackage: com.roomservice.realstate, automationName: UiAutomator2, deviceName: Android Emulator, newCommandTimeout: 300, platformName: ANDROID, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3200, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:pixelRatio: 3.5, appium:platformVersion: 13, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 3116, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 0f453ca9-e449-4ded-845e-b84684fd26cf
+2026-04-17 11:57:55.449 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-17 12:08:02.854 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-17 12:08:02.859 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-17 12:08:02.861 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-17 12:08:02.878 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-17 12:08:02.878 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-17 12:08:02.891 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-17 12:08:02.901 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-17 12:08:02.907 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-17 12:08:43.040 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-17 12:08:53.133 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 2/30
+2026-04-17 12:09:05.371 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 3/30
+2026-04-17 12:09:05.470 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator is ready for use
+2026-04-17 12:09:05.472 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator started successfully: Pixel_9_Pro_API_33 on port: 5554
+2026-04-17 12:09:05.478 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Starting Appium Server...
+2026-04-17 12:09:18.022 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server started successfully on 127.0.0.1:4723
+2026-04-17 12:09:18.028 [main] INFO  com.mobile.framework.base.BaseTest - Appium server started successfully
+2026-04-17 12:09:18.219 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-17 12:09:18.271 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-17 12:10:20.806 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for null
+2026-04-17 12:10:20.824 [main] INFO  com.mobile.framework.base.BaseTest - Driver initialized successfully for device: null
+2026-04-17 12:10:21.333 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Initializing Extent Reports...
+2026-04-17 12:10:23.102 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Extent Reports initialized successfully. Report will be saved to: ./reports/AutomationReport_20260417-121021.html
+2026-04-17 12:10:23.184 [main] INFO  com.mobile.framework.base.BaseTest - Starting test: testDynamicRegistrationWithExplicitWait
+2026-04-17 12:10:43.457 [main] ERROR com.mobile.framework.utilities.WaitUtility - Element not visible within 5 seconds: By.id: com.android.permissioncontroller:id/permission_allow_button
+2026-04-17 12:10:43.466 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Permission dialog not present or already handled
+2026-04-17 12:11:16.639 [main] ERROR com.mobile.framework.utilities.WaitUtility - Element not clickable within 30 seconds: By.id: com.roomservice.realstate:id/CreateNewAccount
+2026-04-17 12:11:16.696 [main] ERROR com.mobile.framework.base.BaseTest - Test failed: Expected condition failed: waiting for element to be clickable: By.id: com.roomservice.realstate:id/CreateNewAccount (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-107-generic', java.version: '21.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /home/wadmin/Desktop/Mobile..., appium:appActivity: com.roomservice.realstate.U..., appium:appPackage: com.roomservice.realstate, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /home/wadmin/Desktop/Mobile..., appActivity: com.roomservice.realstate.U..., appPackage: com.roomservice.realstate, automationName: UiAutomator2, deviceName: Android Emulator, newCommandTimeout: 300, platformName: ANDROID, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3200, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:pixelRatio: 3.5, appium:platformVersion: 13, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 3116, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5619d489-dd61-4334-bcfc-916e89002ba7
+2026-04-17 12:11:16.950 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-17 12:12:08.906 [main] INFO  com.mobile.framework.utilities.ScreenshotUtility - Screenshot captured: ./reports/screenshots/testDynamicRegistrationWithExplicitWait_20260417-121117.png
+2026-04-17 12:12:08.911 [main] INFO  com.mobile.framework.base.BaseTest - Screenshot captured for failed test: testDynamicRegistrationWithExplicitWait
+2026-04-17 12:12:08.914 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-17 12:12:11.941 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver quit successfully
+2026-04-17 12:12:11.946 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-17 12:12:11.967 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test suite...
+2026-04-17 12:12:11.971 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Stopping Appium Server...
+2026-04-17 12:12:12.198 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server stopped successfully
+2026-04-17 12:12:12.200 [main] INFO  com.mobile.framework.base.BaseTest - Appium server stopped successfully
+2026-04-17 12:12:12.200 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Stopping Android emulator...
+2026-04-17 12:12:12.201 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator stopped successfully
+2026-04-17 12:12:12.201 [main] INFO  com.mobile.framework.base.BaseTest - Emulator stopped if it was started by framework
+2026-04-17 12:12:12.202 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Flushing Extent Reports...
+2026-04-17 12:12:13.388 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Extent Reports flushed successfully
+2026-04-17 12:12:13.389 [main] INFO  com.mobile.framework.base.BaseTest - Extent reports flushed successfully
+2026-04-17 12:14:18.808 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-17 12:14:18.814 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-17 12:14:18.815 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-17 12:14:18.825 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-17 12:14:18.825 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-17 12:14:18.831 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-17 12:14:18.832 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-17 12:14:18.833 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-17 12:14:58.898 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-17 12:15:09.061 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 2/30
+2026-04-17 12:15:09.150 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator is ready for use
+2026-04-17 12:15:09.154 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator started successfully: Pixel_9_Pro_API_33 on port: 5554
+2026-04-17 12:15:09.169 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Starting Appium Server...
+2026-04-17 12:15:18.278 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server started successfully on 127.0.0.1:4723
+2026-04-17 12:15:18.279 [main] INFO  com.mobile.framework.base.BaseTest - Appium server started successfully
+2026-04-17 12:15:18.423 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-17 12:15:18.471 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-17 12:15:52.666 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for null
+2026-04-17 12:15:52.668 [main] INFO  com.mobile.framework.base.BaseTest - Driver initialized successfully for device: null
+2026-04-17 12:15:52.918 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Initializing Extent Reports...
+2026-04-17 12:15:53.928 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Extent Reports initialized successfully. Report will be saved to: ./reports/AutomationReport_20260417-121552.html
+2026-04-17 12:15:53.969 [main] INFO  com.mobile.framework.base.BaseTest - Starting test: testDynamicRegistrationWithExplicitWait
+2026-04-17 12:16:07.989 [main] ERROR com.mobile.framework.utilities.WaitUtility - Element not visible within 5 seconds: By.id: com.android.permissioncontroller:id/permission_allow_button
+2026-04-17 12:16:07.997 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Permission dialog not present or already handled
+2026-04-17 12:16:49.652 [main] ERROR com.mobile.framework.utilities.WaitUtility - Element not clickable within 30 seconds: By.id: com.roomservice.realstate:id/CreateNewAccount
+2026-04-17 12:16:49.677 [main] ERROR com.mobile.framework.base.BaseTest - Test failed: Expected condition failed: waiting for element to be clickable: By.id: com.roomservice.realstate:id/CreateNewAccount (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-107-generic', java.version: '21.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /home/wadmin/Desktop/Mobile..., appium:appActivity: com.roomservice.realstate.U..., appium:appPackage: com.roomservice.realstate, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /home/wadmin/Desktop/Mobile..., appActivity: com.roomservice.realstate.U..., appPackage: com.roomservice.realstate, automationName: UiAutomator2, deviceName: Android Emulator, newCommandTimeout: 300, platformName: ANDROID, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3200, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:pixelRatio: 3.5, appium:platformVersion: 13, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 3116, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: c6ef3147-10c6-4052-bf36-843d1567afaf
+2026-04-17 12:16:49.758 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-17 12:16:53.084 [main] INFO  com.mobile.framework.utilities.ScreenshotUtility - Screenshot captured: ./reports/screenshots/testDynamicRegistrationWithExplicitWait_20260417-121649.png
+2026-04-17 12:16:53.085 [main] INFO  com.mobile.framework.base.BaseTest - Screenshot captured for failed test: testDynamicRegistrationWithExplicitWait
+2026-04-17 12:16:53.086 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-17 12:16:55.224 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver quit successfully
+2026-04-17 12:16:55.227 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-17 12:16:55.260 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test suite...
+2026-04-17 12:16:55.266 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Stopping Appium Server...
+2026-04-17 12:16:55.442 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server stopped successfully
+2026-04-17 12:16:55.448 [main] INFO  com.mobile.framework.base.BaseTest - Appium server stopped successfully
+2026-04-17 12:16:55.449 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Stopping Android emulator...
+2026-04-17 12:16:55.452 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator stopped successfully
+2026-04-17 12:16:55.453 [main] INFO  com.mobile.framework.base.BaseTest - Emulator stopped if it was started by framework
+2026-04-17 12:16:55.454 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Flushing Extent Reports...
+2026-04-17 12:16:56.434 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Extent Reports flushed successfully
+2026-04-17 12:16:56.436 [main] INFO  com.mobile.framework.base.BaseTest - Extent reports flushed successfully
+2026-04-17 12:20:54.002 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-17 12:20:54.005 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-17 12:20:54.006 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-17 12:20:54.019 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-17 12:20:54.019 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-17 12:20:54.022 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-17 12:20:54.023 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-17 12:20:54.026 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-17 12:21:34.145 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-17 12:21:44.242 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 2/30
+2026-04-17 12:21:44.366 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator is ready for use
+2026-04-17 12:21:44.369 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator started successfully: Pixel_9_Pro_API_33 on port: 5554
+2026-04-17 12:21:44.383 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Starting Appium Server...
+2026-04-17 12:21:53.523 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server started successfully on 127.0.0.1:4723
+2026-04-17 12:21:53.524 [main] INFO  com.mobile.framework.base.BaseTest - Appium server started successfully
+2026-04-17 12:21:53.752 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-17 12:21:53.801 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-17 12:22:19.958 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for null
+2026-04-17 12:22:19.961 [main] INFO  com.mobile.framework.base.BaseTest - Driver initialized successfully for device: null
+2026-04-17 12:22:20.103 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Initializing Extent Reports...
+2026-04-17 12:22:20.770 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Extent Reports initialized successfully. Report will be saved to: ./reports/AutomationReport_20260417-122220.html
+2026-04-17 12:22:20.781 [main] INFO  com.mobile.framework.base.BaseTest - Starting test: testDynamicRegistrationWithExplicitWait
+2026-04-17 12:22:35.626 [main] ERROR com.mobile.framework.utilities.WaitUtility - Element not visible within 5 seconds: By.id: com.android.permissioncontroller:id/permission_allow_button
+2026-04-17 12:22:35.633 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Permission dialog not present or already handled
+2026-04-17 12:23:29.239 [main] ERROR com.mobile.framework.utilities.WaitUtility - Element not clickable within 30 seconds: By.id: com.roomservice.realstate:id/CreateNewAccount
+2026-04-17 12:23:29.256 [main] ERROR com.mobile.framework.base.BaseTest - Test failed: Expected condition failed: waiting for element to be clickable: By.id: com.roomservice.realstate:id/CreateNewAccount (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-107-generic', java.version: '21.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /home/wadmin/Desktop/Mobile..., appium:appActivity: com.roomservice.realstate.U..., appium:appPackage: com.roomservice.realstate, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /home/wadmin/Desktop/Mobile..., appActivity: com.roomservice.realstate.U..., appPackage: com.roomservice.realstate, automationName: UiAutomator2, deviceName: Android Emulator, newCommandTimeout: 300, platformName: ANDROID, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3200, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:pixelRatio: 3.5, appium:platformVersion: 13, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 3116, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2041566a-14cb-45dc-bdb8-0e44ba73abf3
+2026-04-17 12:23:29.285 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-17 12:23:48.604 [main] ERROR com.mobile.framework.base.BaseTest - Error during teardown: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-107-generic', java.version: '21.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2041566a-14cb-45dc-bdb8-0e44ba73abf3, screenshot {}]
+Capabilities {appium:app: /home/wadmin/Desktop/Mobile..., appium:appActivity: com.roomservice.realstate.U..., appium:appPackage: com.roomservice.realstate, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /home/wadmin/Desktop/Mobile..., appActivity: com.roomservice.realstate.U..., appPackage: com.roomservice.realstate, automationName: UiAutomator2, deviceName: Android Emulator, newCommandTimeout: 300, platformName: ANDROID, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3200, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:pixelRatio: 3.5, appium:platformVersion: 13, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 3116, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2041566a-14cb-45dc-bdb8-0e44ba73abf3
+2026-04-17 12:23:48.621 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test suite...
+2026-04-17 12:23:48.621 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Stopping Appium Server...
+2026-04-17 12:23:52.012 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server stopped successfully
+2026-04-17 12:23:52.013 [main] INFO  com.mobile.framework.base.BaseTest - Appium server stopped successfully
+2026-04-17 12:23:52.013 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Stopping Android emulator...
+2026-04-17 12:23:52.013 [main] INFO  com.mobile.framework.utilities.EmulatorManager - No emulator process to stop
+2026-04-17 12:23:52.013 [main] INFO  com.mobile.framework.base.BaseTest - Emulator stopped if it was started by framework
+2026-04-17 12:23:52.013 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Flushing Extent Reports...
+2026-04-17 12:23:52.199 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Extent Reports flushed successfully
+2026-04-17 12:23:52.199 [main] INFO  com.mobile.framework.base.BaseTest - Extent reports flushed successfully
+2026-04-17 12:25:15.578 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-17 12:25:15.581 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-17 12:25:15.581 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-17 12:25:15.587 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-17 12:25:15.588 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-17 12:25:15.590 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-17 12:25:15.590 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-17 12:25:15.592 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-17 12:25:45.619 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator is ready for use
+2026-04-17 12:25:45.620 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator started successfully: Pixel_9_Pro_API_33 on port: 5554
+2026-04-17 12:25:45.621 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Starting Appium Server...
+2026-04-17 12:25:46.963 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server started successfully on 127.0.0.1:4723
+2026-04-17 12:25:46.964 [main] INFO  com.mobile.framework.base.BaseTest - Appium server started successfully
+2026-04-17 12:25:46.993 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-17 12:25:47.007 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-17 12:25:58.907 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for null
+2026-04-17 12:25:58.907 [main] INFO  com.mobile.framework.base.BaseTest - Driver initialized successfully for device: null
+2026-04-17 12:25:58.966 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Initializing Extent Reports...
+2026-04-17 12:25:59.272 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Extent Reports initialized successfully. Report will be saved to: ./reports/AutomationReport_20260417-122558.html
+2026-04-17 12:25:59.277 [main] INFO  com.mobile.framework.base.BaseTest - Starting test: testDynamicRegistrationWithExplicitWait
+2026-04-17 12:26:14.894 [main] ERROR com.mobile.framework.utilities.WaitUtility - Element not visible within 5 seconds: By.id: com.android.permissioncontroller:id/permission_allow_button
+2026-04-17 12:26:14.896 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Permission dialog not present or already handled
+2026-04-17 12:26:20.803 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Tapped on element: Located by By.chained({By.xpath: //android.widget.TextView[@resource-id='com.roomservice.realstate:id/CreateNewAccount']})
+2026-04-17 12:26:20.804 [main] INFO  com.mobile.framework.pages.BasePage - Clicked create new account title
+2026-04-17 12:26:23.990 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Sent text 'Auto0805' to element: Located by By.chained({By.xpath: //android.widget.EditText[@resource-id='com.roomservice.realstate:id/first_name']})
+2026-04-17 12:26:23.990 [main] INFO  com.mobile.framework.pages.BasePage - Entered First name
+2026-04-17 12:26:25.122 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Sent text 'User' to element: Located by By.chained({By.xpath: //android.widget.EditText[@resource-id='com.roomservice.realstate:id/last_name']})
+2026-04-17 12:26:25.122 [main] INFO  com.mobile.framework.pages.BasePage - Entered Last Name
+2026-04-17 12:26:26.176 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Sent text 'auto.user.1776408980805@mailinator.com' to element: Located by By.chained({By.xpath: //android.widget.EditText[@resource-id='com.roomservice.realstate:id/email']})
+2026-04-17 12:26:26.176 [main] INFO  com.mobile.framework.pages.BasePage - Entered email Name
+2026-04-17 12:26:27.346 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Sent text 'P@ss980805' to element: Located by By.chained({By.xpath: //android.widget.EditText[@resource-id='com.roomservice.realstate:id/password']})
+2026-04-17 12:26:27.347 [main] INFO  com.mobile.framework.pages.BasePage - Entered email Name
+2026-04-17 12:26:28.421 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Sent text 'India' to element: Located by By.chained({By.xpath: //android.widget.AutoCompleteTextView[@resource-id='com.roomservice.realstate:id/etRegion']})
+2026-04-17 12:26:28.421 [main] INFO  com.mobile.framework.pages.BasePage - Entered  region
+2026-04-17 12:26:29.064 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Tapped on element: Located by By.chained({By.xpath: //android.widget.Button[@resource-id='com.roomservice.realstate:id/btnCreateAccount']})
+2026-04-17 12:26:29.065 [main] INFO  com.mobile.framework.pages.BasePage - Clicked on create account button
+2026-04-17 12:26:29.067 [main] INFO  com.mobile.framework.base.BaseTest - Registration form submitted successfully with email: auto.user.1776408980805@mailinator.com
+2026-04-17 12:26:29.080 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-17 12:26:29.081 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-17 12:26:29.849 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver quit successfully
+2026-04-17 12:26:29.849 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-17 12:26:29.864 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test suite...
+2026-04-17 12:26:29.865 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Stopping Appium Server...
+2026-04-17 12:26:29.971 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server stopped successfully
+2026-04-17 12:26:29.977 [main] INFO  com.mobile.framework.base.BaseTest - Appium server stopped successfully
+2026-04-17 12:26:29.979 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Stopping Android emulator...
+2026-04-17 12:26:29.980 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator stopped successfully
+2026-04-17 12:26:29.980 [main] INFO  com.mobile.framework.base.BaseTest - Emulator stopped if it was started by framework
+2026-04-17 12:26:29.980 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Flushing Extent Reports...
+2026-04-17 12:26:30.214 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Extent Reports flushed successfully
+2026-04-17 12:26:30.214 [main] INFO  com.mobile.framework.base.BaseTest - Extent reports flushed successfully
+2026-04-17 12:26:57.648 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-17 12:26:57.650 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-17 12:26:57.651 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-17 12:26:57.657 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-17 12:26:57.657 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-17 12:26:57.660 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-17 12:26:57.660 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-17 12:26:57.661 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-17 12:27:37.721 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-17 12:27:47.770 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 2/30
+2026-04-17 12:27:47.801 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator is ready for use
+2026-04-17 12:27:47.801 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator started successfully: Pixel_9_Pro_API_33 on port: 5554
+2026-04-17 12:27:47.803 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Starting Appium Server...
+2026-04-17 12:27:52.230 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server started successfully on 127.0.0.1:4723
+2026-04-17 12:27:52.231 [main] INFO  com.mobile.framework.base.BaseTest - Appium server started successfully
+2026-04-17 12:27:52.293 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-17 12:27:52.334 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-17 12:28:19.035 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for null
+2026-04-17 12:28:19.043 [main] INFO  com.mobile.framework.base.BaseTest - Driver initialized successfully for device: null
+2026-04-17 12:28:19.104 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Initializing Extent Reports...
+2026-04-17 12:28:19.472 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Extent Reports initialized successfully. Report will be saved to: ./reports/AutomationReport_20260417-122819.html
+2026-04-17 12:28:19.490 [main] INFO  com.mobile.framework.base.BaseTest - Starting test: testDynamicRegistrationWithExplicitWait
+2026-04-17 12:28:32.135 [main] ERROR com.mobile.framework.utilities.WaitUtility - Element not visible within 5 seconds: By.id: com.android.permissioncontroller:id/permission_allow_button
+2026-04-17 12:28:32.139 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Permission dialog not present or already handled
+2026-04-17 12:28:34.360 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Tapped on element: Located by By.chained({By.xpath: //android.widget.TextView[@resource-id='com.roomservice.realstate:id/CreateNewAccount']})
+2026-04-17 12:28:34.361 [main] INFO  com.mobile.framework.pages.BasePage - Clicked create new account title
+2026-04-17 12:28:42.041 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Sent text 'Auto4364' to element: Located by By.chained({By.xpath: //android.widget.EditText[@resource-id='com.roomservice.realstate:id/first_name']})
+2026-04-17 12:28:42.043 [main] INFO  com.mobile.framework.pages.BasePage - Entered First name
+2026-04-17 12:28:42.975 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Sent text 'User' to element: Located by By.chained({By.xpath: //android.widget.EditText[@resource-id='com.roomservice.realstate:id/last_name']})
+2026-04-17 12:28:42.982 [main] INFO  com.mobile.framework.pages.BasePage - Entered Last Name
+2026-04-17 12:28:43.610 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Sent text 'auto.user.1776409114364@mailinator.com' to element: Located by By.chained({By.xpath: //android.widget.EditText[@resource-id='com.roomservice.realstate:id/email']})
+2026-04-17 12:28:43.611 [main] INFO  com.mobile.framework.pages.BasePage - Entered email Name
+2026-04-17 12:28:44.418 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Sent text 'P@ss114364' to element: Located by By.chained({By.xpath: //android.widget.EditText[@resource-id='com.roomservice.realstate:id/password']})
+2026-04-17 12:28:44.423 [main] INFO  com.mobile.framework.pages.BasePage - Entered email Name
+2026-04-17 12:28:46.591 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Sent text 'India' to element: Located by By.chained({By.xpath: //android.widget.AutoCompleteTextView[@resource-id='com.roomservice.realstate:id/etRegion']})
+2026-04-17 12:28:46.592 [main] INFO  com.mobile.framework.pages.BasePage - Entered  region
+2026-04-17 12:28:53.035 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Tapped on element: Located by By.chained({By.xpath: //android.widget.Button[@resource-id='com.roomservice.realstate:id/btnCreateAccount']})
+2026-04-17 12:28:53.036 [main] INFO  com.mobile.framework.pages.BasePage - Clicked on create account button
+2026-04-17 12:28:53.043 [main] INFO  com.mobile.framework.base.BaseTest - Registration form submitted successfully with email: auto.user.1776409114364@mailinator.com
+2026-04-17 12:28:53.081 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-17 12:28:53.085 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-17 12:28:54.483 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver quit successfully
+2026-04-17 12:28:54.484 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-17 12:28:54.491 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test suite...
+2026-04-17 12:28:54.491 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Stopping Appium Server...
+2026-04-17 12:28:58.140 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server stopped successfully
+2026-04-17 12:28:58.140 [main] INFO  com.mobile.framework.base.BaseTest - Appium server stopped successfully
+2026-04-17 12:28:58.140 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Stopping Android emulator...
+2026-04-17 12:28:58.140 [main] INFO  com.mobile.framework.utilities.EmulatorManager - No emulator process to stop
+2026-04-17 12:28:58.140 [main] INFO  com.mobile.framework.base.BaseTest - Emulator stopped if it was started by framework
+2026-04-17 12:28:58.140 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Flushing Extent Reports...
+2026-04-17 12:28:58.361 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Extent Reports flushed successfully
+2026-04-17 12:28:58.362 [main] INFO  com.mobile.framework.base.BaseTest - Extent reports flushed successfully
+2026-04-20 13:24:36.323 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-20 13:24:36.326 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-20 13:24:36.327 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-20 13:24:37.093 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-20 13:24:37.094 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-20 13:24:37.105 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-20 13:24:37.106 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 13:24:37.113 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-20 13:25:17.142 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-20 13:25:27.166 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 2/30
+2026-04-20 13:25:37.169 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 3/30
+2026-04-20 15:37:43.416 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-20 15:37:43.420 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-20 15:37:43.421 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-20 15:37:44.187 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-20 15:37:44.188 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-20 15:37:44.197 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-20 15:37:44.200 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 15:37:44.208 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-20 15:38:24.213 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-20 15:38:34.216 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 2/30
+2026-04-20 16:04:50.741 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-20 16:04:50.745 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-20 16:04:50.746 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-20 16:04:50.757 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-20 16:04:50.757 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-20 16:04:50.760 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-20 16:04:50.760 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 16:04:50.762 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-20 16:05:30.801 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-20 16:05:40.854 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 2/30
+2026-04-20 16:05:40.908 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator is ready for use
+2026-04-20 16:05:40.909 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator started successfully: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 16:05:40.913 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Starting Appium Server...
+2026-04-20 16:05:40.914 [main] ERROR com.mobile.framework.drivers.AppiumServerManager - Failed to start Appium Server: Node.js binary not found at: /home/wadmin/.local/share/fnm/node-versions/v22.13.1/installation/bin/node
+2026-04-20 16:05:40.914 [main] ERROR com.mobile.framework.base.BaseTest - Failed to set up test suite: Failed to start Appium Server
+2026-04-20 16:05:41.022 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-20 16:05:41.074 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-20 16:05:41.983 [main] ERROR com.mobile.framework.drivers.DriverFactory - Failed to initialize Appium Driver: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'wws-cpu-202308-04', ip: '192.168.1.54'
+2026-04-20 16:05:41.983 [main] ERROR com.mobile.framework.base.BaseTest - Failed to initialize driver: Failed to initialize Appium Driver
+2026-04-20 16:05:42.024 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-20 16:05:42.024 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-20 16:05:42.024 [main] WARN  com.mobile.framework.drivers.DriverFactory - No driver instance found to quit
+2026-04-20 16:05:42.024 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-20 16:05:42.029 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-20 16:05:42.029 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-20 16:05:42.041 [main] ERROR com.mobile.framework.drivers.DriverFactory - Failed to initialize Appium Driver: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'wws-cpu-202308-04', ip: '192.168.1.54'
+2026-04-20 16:05:42.042 [main] ERROR com.mobile.framework.base.BaseTest - Failed to initialize driver: Failed to initialize Appium Driver
+2026-04-20 16:05:42.045 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-20 16:05:42.045 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-20 16:05:42.045 [main] WARN  com.mobile.framework.drivers.DriverFactory - No driver instance found to quit
+2026-04-20 16:05:42.045 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-20 16:05:42.048 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-20 16:05:42.048 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-20 16:05:42.062 [main] ERROR com.mobile.framework.drivers.DriverFactory - Failed to initialize Appium Driver: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'wws-cpu-202308-04', ip: '192.168.1.54'
+2026-04-20 16:05:42.063 [main] ERROR com.mobile.framework.base.BaseTest - Failed to initialize driver: Failed to initialize Appium Driver
+2026-04-20 16:05:42.071 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-20 16:05:42.072 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-20 16:05:42.073 [main] WARN  com.mobile.framework.drivers.DriverFactory - No driver instance found to quit
+2026-04-20 16:05:42.077 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-20 16:05:42.082 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test suite...
+2026-04-20 16:05:42.082 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Stopping Appium Server...
+2026-04-20 16:05:42.083 [main] WARN  com.mobile.framework.drivers.AppiumServerManager - Appium Server is not running or already stopped
+2026-04-20 16:05:42.083 [main] INFO  com.mobile.framework.base.BaseTest - Appium server stopped successfully
+2026-04-20 16:05:42.083 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Stopping Android emulator...
+2026-04-20 16:05:42.083 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator stopped successfully
+2026-04-20 16:05:42.083 [main] INFO  com.mobile.framework.base.BaseTest - Emulator stopped if it was started by framework
+2026-04-20 16:05:42.085 [main] INFO  com.mobile.framework.base.BaseTest - Extent reports flushed successfully
+2026-04-20 16:07:49.768 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-20 16:07:49.771 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-20 16:07:49.771 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-20 16:07:49.783 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-20 16:07:49.783 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-20 16:07:49.785 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-20 16:07:49.786 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 16:07:49.787 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-20 16:09:07.260 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-20 16:09:07.262 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-20 16:09:07.263 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-20 16:09:07.270 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-20 16:09:07.270 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-20 16:09:07.272 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-20 16:09:07.272 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 16:09:07.274 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-20 16:09:47.321 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-20 16:09:47.399 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator is ready for use
+2026-04-20 16:09:47.400 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator started successfully: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 16:09:47.401 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Starting Appium Server...
+2026-04-20 16:09:47.401 [main] ERROR com.mobile.framework.drivers.AppiumServerManager - Failed to start Appium Server: Node.js binary not found at: /home/wadmin/.local/share/fnm/node-versions/v22.13.1/installation/bin/node
+2026-04-20 16:09:47.402 [main] ERROR com.mobile.framework.base.BaseTest - Failed to set up test suite: Failed to start Appium Server
+2026-04-20 16:09:47.540 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-20 16:09:47.570 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-20 16:09:49.064 [main] ERROR com.mobile.framework.drivers.DriverFactory - Failed to initialize Appium Driver: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'wws-cpu-202308-04', ip: '192.168.1.54'
+2026-04-20 16:09:49.064 [main] ERROR com.mobile.framework.base.BaseTest - Failed to initialize driver: Failed to initialize Appium Driver
+2026-04-20 16:09:49.115 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-20 16:09:49.115 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-20 16:09:49.116 [main] WARN  com.mobile.framework.drivers.DriverFactory - No driver instance found to quit
+2026-04-20 16:09:49.116 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-20 16:09:49.122 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test suite...
+2026-04-20 16:09:49.123 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Stopping Appium Server...
+2026-04-20 16:09:49.123 [main] WARN  com.mobile.framework.drivers.AppiumServerManager - Appium Server is not running or already stopped
+2026-04-20 16:09:49.123 [main] INFO  com.mobile.framework.base.BaseTest - Appium server stopped successfully
+2026-04-20 16:09:49.123 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Stopping Android emulator...
+2026-04-20 16:09:49.123 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator stopped successfully
+2026-04-20 16:09:49.123 [main] INFO  com.mobile.framework.base.BaseTest - Emulator stopped if it was started by framework
+2026-04-20 16:09:49.124 [main] INFO  com.mobile.framework.base.BaseTest - Extent reports flushed successfully
+2026-04-20 16:11:06.852 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-20 16:11:06.855 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-20 16:11:06.857 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-20 16:11:06.865 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-20 16:11:06.865 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-20 16:11:06.870 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-20 16:11:06.870 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 16:11:06.872 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-20 16:11:46.909 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-20 16:11:47.016 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator is ready for use
+2026-04-20 16:11:47.017 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator started successfully: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 16:11:47.020 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Starting Appium Server...
+2026-04-20 16:11:47.021 [main] ERROR com.mobile.framework.drivers.AppiumServerManager - Failed to start Appium Server: Node.js binary not found at: /home/wadmin/.local/share/fnm/node-versions/v22.13.1/installation/bin/node
+2026-04-20 16:11:47.022 [main] ERROR com.mobile.framework.base.BaseTest - Failed to set up test suite: Failed to start Appium Server
+2026-04-20 16:11:47.059 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-20 16:11:47.074 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-20 16:11:47.982 [main] ERROR com.mobile.framework.drivers.DriverFactory - Failed to initialize Appium Driver: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'wws-cpu-202308-04', ip: '192.168.1.54'
+2026-04-20 16:11:47.983 [main] ERROR com.mobile.framework.base.BaseTest - Failed to initialize driver: Failed to initialize Appium Driver
+2026-04-20 16:11:48.037 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-20 16:11:48.039 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-20 16:11:48.044 [main] WARN  com.mobile.framework.drivers.DriverFactory - No driver instance found to quit
+2026-04-20 16:11:48.044 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-20 16:11:48.054 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test suite...
+2026-04-20 16:11:48.055 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Stopping Appium Server...
+2026-04-20 16:11:48.056 [main] WARN  com.mobile.framework.drivers.AppiumServerManager - Appium Server is not running or already stopped
+2026-04-20 16:11:48.056 [main] INFO  com.mobile.framework.base.BaseTest - Appium server stopped successfully
+2026-04-20 16:11:48.057 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Stopping Android emulator...
+2026-04-20 16:11:48.058 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator stopped successfully
+2026-04-20 16:11:48.060 [main] INFO  com.mobile.framework.base.BaseTest - Emulator stopped if it was started by framework
+2026-04-20 16:11:48.062 [main] INFO  com.mobile.framework.base.BaseTest - Extent reports flushed successfully
+2026-04-20 16:13:16.140 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-20 16:13:16.142 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-20 16:13:16.142 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-20 16:13:16.150 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-20 16:13:16.150 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-20 16:13:16.153 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-20 16:13:16.153 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 16:13:16.154 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-20 16:13:56.202 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-20 16:14:10.835 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator is ready for use
+2026-04-20 16:14:10.836 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator started successfully: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 16:14:10.837 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Starting Appium Server...
+2026-04-20 16:14:10.839 [main] ERROR com.mobile.framework.drivers.AppiumServerManager - Failed to start Appium Server: Node.js binary not found at: /home/wadmin/.local/share/fnm/node-versions/v22.13.1/installation/bin/node
+2026-04-20 16:14:10.840 [main] ERROR com.mobile.framework.base.BaseTest - Failed to set up test suite: Failed to start Appium Server
+2026-04-20 16:14:10.907 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-20 16:14:10.927 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-20 16:14:12.201 [main] ERROR com.mobile.framework.drivers.DriverFactory - Failed to initialize Appium Driver: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'wws-cpu-202308-04', ip: '192.168.1.54'
+2026-04-20 16:14:12.204 [main] ERROR com.mobile.framework.base.BaseTest - Failed to initialize driver: Failed to initialize Appium Driver
+2026-04-20 16:14:12.311 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-20 16:14:12.314 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-20 16:14:12.314 [main] WARN  com.mobile.framework.drivers.DriverFactory - No driver instance found to quit
+2026-04-20 16:14:12.314 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-20 16:14:12.319 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test suite...
+2026-04-20 16:14:12.320 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Stopping Appium Server...
+2026-04-20 16:14:12.320 [main] WARN  com.mobile.framework.drivers.AppiumServerManager - Appium Server is not running or already stopped
+2026-04-20 16:14:12.320 [main] INFO  com.mobile.framework.base.BaseTest - Appium server stopped successfully
+2026-04-20 16:14:12.320 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Stopping Android emulator...
+2026-04-20 16:14:12.320 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator stopped successfully
+2026-04-20 16:14:12.321 [main] INFO  com.mobile.framework.base.BaseTest - Emulator stopped if it was started by framework
+2026-04-20 16:14:12.323 [main] INFO  com.mobile.framework.base.BaseTest - Extent reports flushed successfully
+2026-04-20 16:27:29.303 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-20 16:27:29.306 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-20 16:27:29.306 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-20 16:27:29.314 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-20 16:27:29.314 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-20 16:27:29.316 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-20 16:27:29.316 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 16:27:29.317 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-20 16:28:09.360 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-20 16:28:09.468 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator is ready for use
+2026-04-20 16:28:09.470 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator started successfully: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 16:28:09.473 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Starting Appium Server...
+2026-04-20 16:28:09.478 [main] ERROR com.mobile.framework.drivers.AppiumServerManager - Failed to start Appium Server: Node.js binary not found at: /home/wadmin/.local/share/fnm/node-versions/v22.13.1/installation/bin/node
+2026-04-20 16:28:09.482 [main] ERROR com.mobile.framework.base.BaseTest - Failed to set up test suite: Failed to start Appium Server
+2026-04-20 16:28:09.530 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-20 16:28:09.547 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-20 16:28:10.348 [main] ERROR com.mobile.framework.drivers.DriverFactory - Failed to initialize Appium Driver: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'wws-cpu-202308-04', ip: '192.168.1.54'
+2026-04-20 16:28:10.348 [main] ERROR com.mobile.framework.base.BaseTest - Failed to initialize driver: Failed to initialize Appium Driver
+2026-04-20 16:28:10.424 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-20 16:28:10.424 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-20 16:28:10.425 [main] WARN  com.mobile.framework.drivers.DriverFactory - No driver instance found to quit
+2026-04-20 16:28:10.425 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-20 16:28:10.443 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test suite...
+2026-04-20 16:28:10.446 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Stopping Appium Server...
+2026-04-20 16:28:10.447 [main] WARN  com.mobile.framework.drivers.AppiumServerManager - Appium Server is not running or already stopped
+2026-04-20 16:28:10.448 [main] INFO  com.mobile.framework.base.BaseTest - Appium server stopped successfully
+2026-04-20 16:28:10.450 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Stopping Android emulator...
+2026-04-20 16:28:10.454 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator stopped successfully
+2026-04-20 16:28:10.456 [main] INFO  com.mobile.framework.base.BaseTest - Emulator stopped if it was started by framework
+2026-04-20 16:28:10.459 [main] INFO  com.mobile.framework.base.BaseTest - Extent reports flushed successfully
+2026-04-20 16:34:21.068 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-20 16:34:21.070 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-20 16:34:21.070 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-20 16:34:21.078 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-20 16:34:21.078 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-20 16:34:21.081 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-20 16:34:21.081 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 16:34:21.082 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-20 16:35:01.131 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-20 16:35:11.172 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 2/30
+2026-04-20 16:35:11.218 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator is ready for use
+2026-04-20 16:35:11.223 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator started successfully: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 16:35:11.225 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Starting Appium Server...
+2026-04-20 16:35:21.139 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server started successfully on 127.0.0.1:4723
+2026-04-20 16:35:21.139 [main] INFO  com.mobile.framework.base.BaseTest - Appium server started successfully
+2026-04-20 16:35:21.265 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-20 16:35:21.303 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-20 16:35:23.117 [main] ERROR com.mobile.framework.drivers.DriverFactory - Failed to initialize Appium Driver: Could not start a new session. Response code 500. Message: Unable to find an active device or emulator with OS 13.0. The following are available: emulator-5554 (15) 
+Host info: host: 'wws-cpu-202308-04', ip: '192.168.1.54'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-107-generic', java.version: '21.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/resources/app/Rooms_v23_03_26_STAGING.apk, appium:appActivity=com.roomservice.realstate.Ui.SplashScreen2, appium:appPackage=com.roomservice.realstate, appium:automationName=UiAutomator2, appium:deviceName=Android Emulator, appium:newCommandTimeout=300, platformName=ANDROID, appium:platformVersion=13.0}], desiredCapabilities=Capabilities {app: /home/wadmin/Downloads/Mobi..., appActivity: com.roomservice.realstate.U..., appPackage: com.roomservice.realstate, automationName: UiAutomator2, deviceName: Android Emulator, newCommandTimeout: 300, platformName: ANDROID, platformVersion: 13.0}}]
+Capabilities {app: /home/wadmin/Downloads/Mobi..., appActivity: com.roomservice.realstate.U..., appPackage: com.roomservice.realstate, automationName: UiAutomator2, deviceName: Android Emulator, newCommandTimeout: 300, platformName: ANDROID, platformVersion: 13.0}
+2026-04-20 16:35:23.117 [main] ERROR com.mobile.framework.base.BaseTest - Failed to initialize driver: Failed to initialize Appium Driver
+2026-04-20 16:35:23.245 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-20 16:35:23.246 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-20 16:35:23.246 [main] WARN  com.mobile.framework.drivers.DriverFactory - No driver instance found to quit
+2026-04-20 16:35:23.246 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-20 16:35:23.292 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test suite...
+2026-04-20 16:35:23.292 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Stopping Appium Server...
+2026-04-20 16:35:23.471 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server stopped successfully
+2026-04-20 16:35:23.473 [main] INFO  com.mobile.framework.base.BaseTest - Appium server stopped successfully
+2026-04-20 16:35:23.473 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Stopping Android emulator...
+2026-04-20 16:35:23.474 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator stopped successfully
+2026-04-20 16:35:23.474 [main] INFO  com.mobile.framework.base.BaseTest - Emulator stopped if it was started by framework
+2026-04-20 16:35:23.477 [main] INFO  com.mobile.framework.base.BaseTest - Extent reports flushed successfully
+2026-04-20 16:47:40.757 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-20 16:47:40.759 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-20 16:47:40.760 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-20 16:47:40.771 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-20 16:47:40.772 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-20 16:47:40.774 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-20 16:47:40.774 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 16:47:40.776 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-20 16:48:20.839 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-20 16:48:21.133 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator is ready for use
+2026-04-20 16:48:21.134 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator started successfully: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 16:48:21.139 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Starting Appium Server...
+2026-04-20 16:48:29.997 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server started successfully on 127.0.0.1:4723
+2026-04-20 16:48:29.998 [main] INFO  com.mobile.framework.base.BaseTest - Appium server started successfully
+2026-04-20 16:48:30.070 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-20 16:48:30.095 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-20 16:48:32.198 [main] ERROR com.mobile.framework.drivers.DriverFactory - Failed to initialize Appium Driver: Could not start a new session. Response code 500. Message: Unable to find an active device or emulator with OS 13.0. The following are available: emulator-5554 (15) 
+Host info: host: 'wws-cpu-202308-04', ip: '192.168.1.54'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-107-generic', java.version: '21.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/resources/app/Rooms_v23_03_26_STAGING.apk, appium:appActivity=com.roomservice.realstate.Ui.SplashScreen2, appium:appPackage=com.roomservice.realstate, appium:automationName=UiAutomator2, appium:deviceName=Android Emulator, appium:newCommandTimeout=300, platformName=ANDROID, appium:platformVersion=13.0}], desiredCapabilities=Capabilities {app: /home/wadmin/Downloads/Mobi..., appActivity: com.roomservice.realstate.U..., appPackage: com.roomservice.realstate, automationName: UiAutomator2, deviceName: Android Emulator, newCommandTimeout: 300, platformName: ANDROID, platformVersion: 13.0}}]
+Capabilities {app: /home/wadmin/Downloads/Mobi..., appActivity: com.roomservice.realstate.U..., appPackage: com.roomservice.realstate, automationName: UiAutomator2, deviceName: Android Emulator, newCommandTimeout: 300, platformName: ANDROID, platformVersion: 13.0}
+2026-04-20 16:48:32.204 [main] ERROR com.mobile.framework.base.BaseTest - Failed to initialize driver: Failed to initialize Appium Driver
+2026-04-20 16:48:32.313 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-20 16:48:32.314 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-20 16:48:32.314 [main] WARN  com.mobile.framework.drivers.DriverFactory - No driver instance found to quit
+2026-04-20 16:48:32.314 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-20 16:48:32.327 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test suite...
+2026-04-20 16:48:32.327 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Stopping Appium Server...
+2026-04-20 16:48:32.510 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server stopped successfully
+2026-04-20 16:48:32.515 [main] INFO  com.mobile.framework.base.BaseTest - Appium server stopped successfully
+2026-04-20 16:48:32.515 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Stopping Android emulator...
+2026-04-20 16:48:32.516 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator stopped successfully
+2026-04-20 16:48:32.517 [main] INFO  com.mobile.framework.base.BaseTest - Emulator stopped if it was started by framework
+2026-04-20 16:48:32.528 [main] INFO  com.mobile.framework.base.BaseTest - Extent reports flushed successfully
+2026-04-20 17:27:32.830 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-20 17:27:32.832 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-20 17:27:32.833 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-20 17:27:32.841 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-20 17:27:32.841 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-20 17:27:32.844 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-20 17:27:32.844 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 17:27:32.845 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-20 17:28:12.917 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-20 17:28:12.961 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator is ready for use
+2026-04-20 17:28:12.962 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator started successfully: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 17:28:12.964 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Starting Appium Server...
+2026-04-20 17:28:22.237 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server started successfully on 127.0.0.1:4723
+2026-04-20 17:28:22.238 [main] INFO  com.mobile.framework.base.BaseTest - Appium server started successfully
+2026-04-20 17:28:22.286 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-20 17:28:22.320 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-20 17:28:25.932 [main] ERROR com.mobile.framework.drivers.DriverFactory - Failed to initialize Appium Driver: Could not start a new session. Response code 500. Message: Unable to find an active device or emulator with OS 13.0. The following are available: emulator-5554 (15) 
+Host info: host: 'wws-cpu-202308-04', ip: '192.168.1.54'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-107-generic', java.version: '21.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation/src/main/resources/app/Rooms_v23_03_26_STAGING.apk, appium:appActivity=com.roomservice.realstate.Ui.SplashScreen2, appium:appPackage=com.roomservice.realstate, appium:automationName=UiAutomator2, appium:deviceName=Android Emulator, appium:newCommandTimeout=300, platformName=ANDROID, appium:platformVersion=13.0}], desiredCapabilities=Capabilities {app: /home/wadmin/Downloads/Mobi..., appActivity: com.roomservice.realstate.U..., appPackage: com.roomservice.realstate, automationName: UiAutomator2, deviceName: Android Emulator, newCommandTimeout: 300, platformName: ANDROID, platformVersion: 13.0}}]
+Capabilities {app: /home/wadmin/Downloads/Mobi..., appActivity: com.roomservice.realstate.U..., appPackage: com.roomservice.realstate, automationName: UiAutomator2, deviceName: Android Emulator, newCommandTimeout: 300, platformName: ANDROID, platformVersion: 13.0}
+2026-04-20 17:28:25.933 [main] ERROR com.mobile.framework.base.BaseTest - Failed to initialize driver: Failed to initialize Appium Driver
+2026-04-20 17:28:26.032 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-20 17:28:26.032 [main] INFO  com.mobile.framework.drivers.DriverFactory - Quitting Appium Driver...
+2026-04-20 17:28:26.033 [main] WARN  com.mobile.framework.drivers.DriverFactory - No driver instance found to quit
+2026-04-20 17:28:26.033 [main] INFO  com.mobile.framework.base.BaseTest - Driver quit successfully
+2026-04-20 17:28:26.054 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test suite...
+2026-04-20 17:28:26.058 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Stopping Appium Server...
+2026-04-20 17:28:26.275 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server stopped successfully
+2026-04-20 17:28:26.278 [main] INFO  com.mobile.framework.base.BaseTest - Appium server stopped successfully
+2026-04-20 17:28:26.282 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Stopping Android emulator...
+2026-04-20 17:28:26.283 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator stopped successfully
+2026-04-20 17:28:26.283 [main] INFO  com.mobile.framework.base.BaseTest - Emulator stopped if it was started by framework
+2026-04-20 17:28:26.285 [main] INFO  com.mobile.framework.base.BaseTest - Extent reports flushed successfully
+2026-04-20 17:38:31.183 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-20 17:38:31.187 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-20 17:38:31.189 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-20 17:38:31.213 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-20 17:38:31.214 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-20 17:38:31.223 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-20 17:38:31.223 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 17:38:31.227 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-20 17:39:11.280 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-20 17:39:11.356 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator is ready for use
+2026-04-20 17:39:11.358 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator started successfully: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 17:39:11.367 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Starting Appium Server...
+2026-04-20 17:39:21.150 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server started successfully on 127.0.0.1:4723
+2026-04-20 17:39:21.151 [main] INFO  com.mobile.framework.base.BaseTest - Appium server started successfully
+2026-04-20 17:39:21.245 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-20 17:39:21.276 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-20 17:43:57.369 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test suite...
+2026-04-20 17:43:57.372 [main] INFO  com.mobile.framework.base.BaseTest - Execution type is LOCAL. Initiating local dependencies.
+2026-04-20 17:43:57.372 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting ADB server...
+2026-04-20 17:43:57.393 [main] INFO  com.mobile.framework.utilities.EmulatorManager - ADB server started successfully
+2026-04-20 17:43:57.393 [main] INFO  com.mobile.framework.base.BaseTest - ADB server started successfully
+2026-04-20 17:43:57.400 [main] INFO  com.mobile.framework.base.BaseTest - No device connected, starting emulator...
+2026-04-20 17:43:57.400 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Starting Android emulator: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 17:43:57.403 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot...
+2026-04-20 17:44:37.469 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 1/30
+2026-04-20 17:44:48.143 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Waiting for emulator to boot... attempt 2/30
+2026-04-20 17:44:48.322 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator is ready for use
+2026-04-20 17:44:48.323 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Emulator started successfully: Pixel_9_Pro_API_33 on port: 5554
+2026-04-20 17:44:48.325 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Starting Appium Server...
+2026-04-20 17:44:57.907 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server started successfully on 127.0.0.1:4723
+2026-04-20 17:44:57.908 [main] INFO  com.mobile.framework.base.BaseTest - Appium server started successfully
+2026-04-20 17:44:58.001 [main] INFO  com.mobile.framework.base.BaseTest - Setting up test method...
+2026-04-20 17:44:58.035 [main] INFO  com.mobile.framework.drivers.DriverFactory - Initializing Appium Driver for null...
+2026-04-20 17:45:34.356 [main] INFO  com.mobile.framework.drivers.DriverFactory - Appium Driver initialized successfully for null
+2026-04-20 17:45:34.356 [main] INFO  com.mobile.framework.base.BaseTest - Driver initialized successfully for device: null
+2026-04-20 17:45:34.514 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Initializing Extent Reports...
+2026-04-20 17:45:35.171 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Extent Reports initialized successfully. Report will be saved to: ./reports/AutomationReport_20260420-174534.html
+2026-04-20 17:45:35.186 [main] INFO  com.mobile.framework.base.BaseTest - Starting test: testDynamicRegistrationWithExplicitWait
+2026-04-20 17:45:49.554 [main] ERROR com.mobile.framework.utilities.WaitUtility - Element not visible within 5 seconds: By.id: com.android.permissioncontroller:id/permission_allow_button
+2026-04-20 17:45:49.555 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Permission dialog not present or already handled
+2026-04-20 17:45:54.388 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Tapped on element: Located by By.chained({By.xpath: //android.widget.TextView[@resource-id='com.roomservice.realstate:id/CreateNewAccount']})
+2026-04-20 17:45:54.389 [main] INFO  com.mobile.framework.pages.BasePage - Clicked create new account title
+2026-04-20 17:45:58.142 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Sent text 'Auto4390' to element: Located by By.chained({By.xpath: //android.widget.EditText[@resource-id='com.roomservice.realstate:id/first_name']})
+2026-04-20 17:45:58.142 [main] INFO  com.mobile.framework.pages.BasePage - Entered First name
+2026-04-20 17:45:59.262 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Sent text 'User' to element: Located by By.chained({By.xpath: //android.widget.EditText[@resource-id='com.roomservice.realstate:id/last_name']})
+2026-04-20 17:45:59.263 [main] INFO  com.mobile.framework.pages.BasePage - Entered Last Name
+2026-04-20 17:46:00.162 [main] INFO  com.mobile.framework.utilities.CommonActionsUtility - Sent text 'auto.user.1776687354390@mailinator.com' to element: Located by By.chained({By.xpath: //android.widget.EditText[@resource-id='com.roomservice.realstate:id/email']})
+2026-04-20 17:46:00.174 [main] INFO  com.mobile.framework.pages.BasePage - Entered email Name
+2026-04-20 17:46:03.692 [main] ERROR com.mobile.framework.utilities.CommonActionsUtility - Failed to send text to element: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-107-generic', java.version: '21.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [d6c6aa21-e5e7-4ec3-a210-9ea0cc07b09d, sendKeysToElement {id=00000000-0000-000c-ffff-ffff00000040, value=[Ljava.lang.CharSequence;@41def031}]
+Capabilities {appium:app: /home/wadmin/Downloads/Mobi..., appium:appActivity: com.roomservice.realstate.U..., appium:appPackage: com.roomservice.realstate, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /home/wadmin/Downloads/Mobi..., appActivity: com.roomservice.realstate.U..., appPackage: com.roomservice.realstate, automationName: UiAutomator2, newCommandTimeout: 300, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:takesScreenshot: true, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (d6c6aa21-e5e7-4ec3-a210-9ea0cc07b09d)] -> xpath: //android.widget.EditText[@resource-id='com.roomservice.realstate:id/password']]
+Session ID: d6c6aa21-e5e7-4ec3-a210-9ea0cc07b09d
+2026-04-20 17:46:03.693 [main] ERROR com.mobile.framework.base.BaseTest - Test failed: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-107-generic', java.version: '21.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [d6c6aa21-e5e7-4ec3-a210-9ea0cc07b09d, sendKeysToElement {id=00000000-0000-000c-ffff-ffff00000040, value=[Ljava.lang.CharSequence;@41def031}]
+Capabilities {appium:app: /home/wadmin/Downloads/Mobi..., appium:appActivity: com.roomservice.realstate.U..., appium:appPackage: com.roomservice.realstate, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /home/wadmin/Downloads/Mobi..., appActivity: com.roomservice.realstate.U..., appPackage: com.roomservice.realstate, automationName: UiAutomator2, newCommandTimeout: 300, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:takesScreenshot: true, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (d6c6aa21-e5e7-4ec3-a210-9ea0cc07b09d)] -> xpath: //android.widget.EditText[@resource-id='com.roomservice.realstate:id/password']]
+Session ID: d6c6aa21-e5e7-4ec3-a210-9ea0cc07b09d
+2026-04-20 17:46:03.704 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test method...
+2026-04-20 17:46:03.720 [main] ERROR com.mobile.framework.base.BaseTest - Error during teardown: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-107-generic', java.version: '21.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [d6c6aa21-e5e7-4ec3-a210-9ea0cc07b09d, screenshot {}]
+Capabilities {appium:app: /home/wadmin/Downloads/Mobi..., appium:appActivity: com.roomservice.realstate.U..., appium:appPackage: com.roomservice.realstate, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /home/wadmin/Downloads/Mobi..., appActivity: com.roomservice.realstate.U..., appPackage: com.roomservice.realstate, automationName: UiAutomator2, newCommandTimeout: 300, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1280x2856, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 156, appium:takesScreenshot: true, appium:viewportRect: {height: 2700, left: 0, top: 156, width: 1280}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d6c6aa21-e5e7-4ec3-a210-9ea0cc07b09d
+2026-04-20 17:46:03.731 [main] INFO  com.mobile.framework.base.BaseTest - Tearing down test suite...
+2026-04-20 17:46:03.733 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Stopping Appium Server...
+2026-04-20 17:46:03.920 [main] INFO  com.mobile.framework.drivers.AppiumServerManager - Appium Server stopped successfully
+2026-04-20 17:46:03.920 [main] INFO  com.mobile.framework.base.BaseTest - Appium server stopped successfully
+2026-04-20 17:46:03.920 [main] INFO  com.mobile.framework.utilities.EmulatorManager - Stopping Android emulator...
+2026-04-20 17:46:03.921 [main] INFO  com.mobile.framework.utilities.EmulatorManager - No emulator process to stop
+2026-04-20 17:46:03.921 [main] INFO  com.mobile.framework.base.BaseTest - Emulator stopped if it was started by framework
+2026-04-20 17:46:03.921 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Flushing Extent Reports...
+2026-04-20 17:46:04.366 [main] INFO  com.mobile.framework.reports.ExtentReportManager - Extent Reports flushed successfully
+2026-04-20 17:46:04.367 [main] INFO  com.mobile.framework.base.BaseTest - Extent reports flushed successfully

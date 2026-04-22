@@ -1,0 +1,5 @@
+#surefire_0
+#Tue Apr 21 16:54:55 IST 2026
+basedir=/home/wadmin/Downloads/Mobile_automation1 (1)/Mobile_automation
+test=SignInTest
+localRepository=/home/wadmin/.m2/repository

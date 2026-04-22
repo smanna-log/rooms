@@ -1,0 +1,235 @@
+name: CI/CD Pipeline - Mobile Automation
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+    inputs:
+      test_suite:
+        description: 'Test suite to run'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - login
+          - signup
+          - registration
+          - signin
+
+env:
+  JAVA_VERSION: '17'
+  NODE_VERSION: '18'
+  APPIUM_VERSION: '2.0.0'
+
+jobs:
+  # Job 1: Build and Validate
+  build:
+    name: Build & Validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK ${{ env.JAVA_VERSION }}
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Cache Maven Dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      - name: Build Project
+        run: mvn clean compile -DskipTests
+
+      - name: Run Code Quality Checks
+        run: mvn checkstyle:check -DskipTests || echo "Checkstyle warnings found"
+
+  # Job 2: Run Tests (Requires Android Emulator)
+  test:
+    name: Run Mobile Tests
+    runs-on: ubuntu-latest
+    needs: build
+    strategy:
+      matrix:
+        test-suite: [login, signup, registration, signin]
+      fail-fast: false
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK ${{ env.JAVA_VERSION }}
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Cache Maven Dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install Appium
+        run: |
+          npm install -g appium@${{ env.APPIUM_VERSION }}
+          appium driver install uiautomator2
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Create Android Emulator
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          target: google_apis
+          arch: x86_64
+          profile: Nexus 6
+          script: echo "Emulator ready"
+
+      - name: Run Tests - ${{ matrix.test-suite }}
+        run: |
+          if [ "${{ matrix.test-suite }}" == "login" ]; then
+            mvn test -Dtest=LoginTest
+          elif [ "${{ matrix.test-suite }}" == "signup" ]; then
+            mvn test -Dtest=SignupTest
+          elif [ "${{ matrix.test-suite }}" == "registration" ]; then
+            mvn test -Dtest=RegistrationTest
+          elif [ "${{ matrix.test-suite }}" == "signin" ]; then
+            mvn test -Dtest=SignInTest
+          fi
+        env:
+          ANDROID_HOME: ${{ steps.setup-android.outputs.android-home }}
+
+      - name: Upload Test Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports-${{ matrix.test-suite }}
+          path: |
+            reports/
+            test-output/
+          retention-days: 30
+
+      - name: Upload Screenshots
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failure-screenshots-${{ matrix.test-suite }}
+          path: reports/screenshots/
+          retention-days: 30
+
+  # Job 3: Run All Tests Together
+  test-all:
+    name: Run All Tests
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.event.inputs.test_suite == 'all' || github.event_name == 'push'
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK ${{ env.JAVA_VERSION }}
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Cache Maven Dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install Appium
+        run: |
+          npm install -g appium@${{ env.APPIUM_VERSION }}
+          appium driver install uiautomator2
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Run All Tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          target: google_apis
+          arch: x86_64
+          profile: Nexus 6
+          script: |
+            mvn clean test
+
+      - name: Upload Test Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports-all
+          path: |
+            reports/
+            test-output/
+          retention-days: 30
+
+      - name: Upload Screenshots
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failure-screenshots-all
+          path: reports/screenshots/
+          retention-days: 30
+
+  # Job 4: Generate and Publish Reports
+  reports:
+    name: Generate Reports
+    runs-on: ubuntu-latest
+    needs: [test, test-all]
+    if: always()
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Download Test Reports
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts/
+
+      - name: Generate Summary
+        run: |
+          echo "## Test Execution Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Workflow:** ${{ github.workflow }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Branch:** ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Commit:** ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Artifacts Generated:" >> $GITHUB_STEP_SUMMARY
+          echo "- Test Reports: Available in Actions Artifacts" >> $GITHUB_STEP_SUMMARY
+          echo "- Screenshots: Available for failed tests" >> $GITHUB_STEP_SUMMARY
+
+      - name: Notify on Failure
+        if: failure()
+        run: |
+          echo "⚠️ Tests failed! Check the artifacts for detailed reports."

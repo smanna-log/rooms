@@ -17,13 +17,13 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <appium.version>8.6.0</appium.version>
-        <selenium.version>4.13.0</selenium.version>
-        <testng.version>7.7.1</testng.version>
-        <extentreports.version>5.0.9</extentreports.version>
-        <log4j.version>2.20.0</log4j.version>
-        <commons-io.version>2.11.0</commons-io.version>
-        <webdrivermanager.version>5.3.2</webdrivermanager.version>
+        <appium.version>9.2.3</appium.version>
+        <selenium.version>4.27.0</selenium.version>
+        <testng.version>7.10.2</testng.version>
+        <extentreports.version>5.1.2</extentreports.version>
+        <log4j.version>2.24.3</log4j.version>
+        <commons-io.version>2.18.0</commons-io.version>
+        <webdrivermanager.version>5.9.2</webdrivermanager.version>
     </properties>
 
     <dependencies>
@@ -104,7 +104,33 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.14.2</version>
+            <version>2.18.2</version>
+        </dependency>
+
+        <!-- Apache Commons Compress (updated to fix CVE) -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-compress</artifactId>
+            <version>1.27.1</version>
+        </dependency>
+
+        <!-- Apache Commons Lang3 (updated to fix CVE) -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.17.0</version>
+        </dependency>
+
+        <!-- Bouncy Castle (updated to fix CVE) -->
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk18on</artifactId>
+            <version>1.79</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcpkix-jdk18on</artifactId>
+            <version>1.79</version>
         </dependency>
     </dependencies>
 

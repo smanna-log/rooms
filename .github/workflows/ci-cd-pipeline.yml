@@ -14,9 +14,7 @@ on:
         type: choice
         options:
           - all
-          - login
-          - signup
-          - registration
+          - responsive
           - signin
 
 env:
@@ -61,7 +59,7 @@ jobs:
     needs: build
     strategy:
       matrix:
-        test-suite: [login, signup, registration, signin]
+        test-suite: [responsive, signin]
       fail-fast: false
     steps:
       - name: Checkout Code
@@ -120,12 +118,8 @@ jobs:
 
       - name: Run Tests - ${{ matrix.test-suite }}
         run: |
-          if [ "${{ matrix.test-suite }}" == "login" ]; then
-            mvn test -Dtest=LoginTest
-          elif [ "${{ matrix.test-suite }}" == "signup" ]; then
-            mvn test -Dtest=SignupTest
-          elif [ "${{ matrix.test-suite }}" == "registration" ]; then
-            mvn test -Dtest=RegistrationTest
+          if [ "${{ matrix.test-suite }}" == "responsive" ]; then
+            mvn test -Dtest=ResponsiveTest
           elif [ "${{ matrix.test-suite }}" == "signin" ]; then
             mvn test -Dtest=SignInTest
           fi

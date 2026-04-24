@@ -1,3 +1,4 @@
-com/mobile/framework/tests/LoginTest.class
 com/mobile/framework/tests/ResponsiveTest.class
+com/mobile/framework/tests/RegistrationTest.class
 com/mobile/framework/tests/ResponsiveTest$ScreenProfile.class
+com/mobile/framework/tests/SignInTest.class

@@ -95,6 +95,12 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
+      - name: Install Android Platform Tools
+        run: |
+          sdkmanager "platform-tools" "platforms;android-30" "build-tools;30.0.3"
+          sdkmanager "system-images;android-30;google_apis;x86_64"
+          echo "y" | sdkmanager --licenses
+
       - name: Create Android Emulator
         uses: reactivecircus/android-emulator-runner@v2
         with:
@@ -102,6 +108,13 @@ jobs:
           target: google_apis
           arch: x86_64
           profile: Nexus 6
+          ram-size: 2048M
+          heap-size: 576M
+          sdcard-path-or-size: 100M
+          avd-name: test_emulator
+          force-avd-creation: true
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -camera-front none
+          disable-animations: true
           script: echo "Emulator ready"
 
       - name: Run Tests - ${{ matrix.test-suite }}
@@ -174,6 +187,12 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
+      - name: Install Android Platform Tools
+        run: |
+          sdkmanager "platform-tools" "platforms;android-30" "build-tools;30.0.3"
+          sdkmanager "system-images;android-30;google_apis;x86_64"
+          echo "y" | sdkmanager --licenses
+
       - name: Run All Tests
         uses: reactivecircus/android-emulator-runner@v2
         with:
@@ -181,7 +200,16 @@ jobs:
           target: google_apis
           arch: x86_64
           profile: Nexus 6
+          ram-size: 2048M
+          heap-size: 576M
+          sdcard-path-or-size: 100M
+          avd-name: test_emulator
+          force-avd-creation: true
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -camera-front none
+          disable-animations: true
           script: |
+            adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed) ]]; do sleep 1; done; input keyevent 82'
+            adb devices
             mvn clean test
 
       - name: Upload Test Reports

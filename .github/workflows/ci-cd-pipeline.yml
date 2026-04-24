@@ -110,11 +110,13 @@ jobs:
           heap-size: 576M
           sdcard-path-or-size: 100M
           avd-name: test_emulator
-          force-avd-creation: true
+          force-avd-creation: false
           emulator-boot-timeout: 600
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -camera-front none
           disable-animations: true
           script: echo "Emulator ready"
+        env:
+          ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL: 120
 
       - name: Run Tests - ${{ matrix.test-suite }}
         run: |
@@ -199,7 +201,7 @@ jobs:
           heap-size: 576M
           sdcard-path-or-size: 100M
           avd-name: test_emulator
-          force-avd-creation: true
+          force-avd-creation: false
           emulator-boot-timeout: 600
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -camera-front none
           disable-animations: true
@@ -207,6 +209,8 @@ jobs:
             adb wait-for-device shell 'while [[ -z $(getprop sys.boot_completed) ]]; do sleep 1; done; input keyevent 82'
             adb devices
             mvn clean test
+        env:
+          ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL: 120
 
       - name: Upload Test Reports
         if: always()

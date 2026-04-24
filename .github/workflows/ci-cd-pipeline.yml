@@ -113,6 +113,7 @@ jobs:
           sdcard-path-or-size: 100M
           avd-name: test_emulator
           force-avd-creation: true
+          emulator-boot-timeout: 600
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -camera-front none
           disable-animations: true
           script: echo "Emulator ready"
@@ -205,6 +206,7 @@ jobs:
           sdcard-path-or-size: 100M
           avd-name: test_emulator
           force-avd-creation: true
+          emulator-boot-timeout: 600
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -camera-front none
           disable-animations: true
           script: |
